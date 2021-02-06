@@ -1,5 +1,5 @@
 # HADDOCKer
-Docker image for the running the HADDOCK for predicting the structure of biomolecular complexes.
+Docker image for the running the HADDOCK system for predicting the structure of biomolecular complexes.
 
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 
