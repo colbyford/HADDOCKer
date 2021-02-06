@@ -25,6 +25,12 @@ RUN \
     python2.7 \
     python2.7-dev
 
+## Change bash Shell to tcsh
+RUN sudo apt-get install tcsh && \
+    chsh -s /bin/tcsh
+    # chsh -s /usr/bin/tcsh
+SHELL ["/bin/tcsh", "-c"]
+
 ## Make software directory
 RUN mkdir software
 
@@ -32,7 +38,12 @@ RUN mkdir software
 COPY cns_solve_1.3_all_intel-mac_linux.tar.gz /software
 RUN cd software && \
     gunzip cns_solve_1.3_all_intel-mac_linux.tar.gz && \
-    tar xvf cns_solve_1.3_all_intel-mac_linux.tar
+    tar xvf cns_solve_1.3_all_intel-mac_linux.tar && \
+    rm cns_solve_1.3/cns_solve_env
+COPY cns_solve_env /software/cns_solve_1.3
+RUN cd software/cns_solve_1.3 && \
+    source cns_solve_env
+
 
 ## Install HADDOCK (https://www.bonvinlab.org/software/haddock2.4/installation/)
 COPY haddock2.4-2021-01.tgz /software
