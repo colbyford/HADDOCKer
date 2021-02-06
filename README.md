@@ -13,15 +13,10 @@ Docker image for the running the HADDOCK system for predicting the structure of 
 docker build -t haddock .
 ```
 
-4. Once the image has been created successfully, run the container using the following command.
-```
-docker run haddock
-```
-
-5. Once the container is ready, remote into the bash terminal.
+4. Once the container is ready, remote into the tcsh terminal.
 ```
 docker run --name haddock -d haddock
-docker exec -it haddock /bin/bash
+docker exec -it haddock /bin/tcsh
 ```
 
 -------------------------------------------
