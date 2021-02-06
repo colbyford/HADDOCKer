@@ -3,6 +3,29 @@ Docker image for the running the HADDOCK system for predicting the structure of 
 
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 
+## Build Instructions
+1. Clone this repository to your local machine
+
+2. Open terminal and navigate to the directory of this repository.
+
+3. Run the following command. This will generate the Docker image.
+```
+docker build -t haddock .
+```
+
+4. Once the image has been created successfully, run the container using the following command.
+```
+docker run haddock
+```
+
+5. Once the container is ready, remote into the bash terminal.
+```
+docker run --name haddock -d haddock
+docker exec -it haddock /bin/bash
+```
+
+-------------------------------------------
+
 ## Licensing
 
 This container image includes software libraries that each require a license. Please fill out the following license request forms before using this software:
