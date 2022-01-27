@@ -49,3 +49,10 @@ RUN cd software/cns_solve_1.3 && \
 COPY haddock2.4-2021-01.tgz /software
 RUN cd software && \
     tar xvfz haddock2.4-2021-01.tgz
+
+## Configure HADDOCK
+COPY local_config_file /software/haddock2.4-2021-01
+RUN cd /software/haddock2.4-2021-01 && \
+    ./install.csh local_config_file 
+    #&& \
+    #source haddock_configure.csh

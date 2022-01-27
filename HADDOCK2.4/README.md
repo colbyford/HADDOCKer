@@ -10,13 +10,13 @@ Docker image for the running the HADDOCK system for predicting the structure of 
 
 3. Run the following command. This will generate the Docker image.
 ```
-docker build -t haddock .
+docker build -t haddock2_4 .
 ```
 
 4. Once the container is ready, remote into the tcsh terminal.
 ```
-docker run --name haddock -d haddock
-docker exec -it haddock /bin/tcsh
+docker run --name haddock2_4 -d haddock2_4
+docker exec -it haddock2_4 /bin/tcsh
 ```
 
 -------------------------------------------
