@@ -1,0 +1,512 @@
+!
+! HADDOCK unambiquous restraints for molecule A
+!
+!
+assign ( resid 32 and segid A)
+       (
+        ( resid 24 and segid C)
+     or
+        ( resid 25 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 23 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 35 and segid A)
+       (
+        ( resid 4 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 57 and segid A)
+       (
+        ( resid 79 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 75 and segid A)
+       (
+        ( resid 2 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 3 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 76 and segid A)
+       (
+        ( resid 3 and segid C)
+     or
+        ( resid 2 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 77 and segid A)
+       (
+        ( resid 3 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 14 and segid A)
+       (
+        ( resid 1 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 15 and segid A)
+       (
+        ( resid 1 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 16 and segid A)
+       (
+        ( resid 1 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 2 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 17 and segid A)
+       (
+        ( resid 2 and segid C)
+     or
+        ( resid 1 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 53 and segid A)
+       (
+        ( resid 79 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 54 and segid A)
+       (
+        ( resid 79 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 56 and segid A)
+       (
+        ( resid 24 and segid C)
+     or
+        ( resid 25 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 24 and segid A)
+       (
+        ( resid 26 and segid C)
+     or
+        ( resid 25 and segid C)
+     or
+        ( resid 27 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       )  2.0 2.0 0.0
+!
+assign ( resid 25 and segid A)
+       (
+        ( resid 25 and segid C)
+     or
+        ( resid 26 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 59 and segid A)
+       (
+        ( resid 24 and segid C)
+     or
+        ( resid 23 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 31 and segid A)
+       (
+        ( resid 3 and segid C)
+     or
+        ( resid 4 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       )  2.0 2.0 0.0
+!
+!
+! HADDOCK unambiquous restraints for molecule C
+!
+!
+assign ( resid 1 and segid C)
+       (
+        ( resid 14 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 1 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 15 and segid A)
+     or
+        ( resid 16 and segid A)
+     or
+        ( resid 17 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 2 and segid C)
+       (
+        ( resid 16 and segid A)
+     or
+        ( resid 17 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 2 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 75 and segid A)
+     or
+        ( resid 76 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 3 and segid C)
+       (
+        ( resid 31 and segid A)
+     or
+        ( resid 75 and segid A)
+     or
+        ( resid 76 and segid A)
+     or
+        ( resid 77 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 4 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 31 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 4 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 35 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 7 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 3 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 8 and segid C)
+       (
+        ( resid 16 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 8 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 15 and segid B)
+     or
+        ( resid 17 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 9 and segid C)
+       (
+        ( resid 17 and segid B)
+     or
+        ( resid 75 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 9 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 27 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 9 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 19 and segid B)
+     or
+        ( resid 16 and segid B)
+     or
+        ( resid 77 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 10 and segid C)
+       (
+        ( resid 35 and segid B)
+     or
+        ( resid 75 and segid B)
+     or
+        ( resid 77 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 10 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 27 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 10 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 76 and segid B)
+     or
+        ( resid 31 and segid B)
+     or
+        ( resid 79 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 11 and segid C)
+       (
+        ( resid 35 and segid B)
+     or
+        ( resid 78 and segid B)
+     or
+        ( resid 79 and segid B)
+     or
+        ( resid 31 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 11 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 27 and segid B)
+     or
+        ( resid 24 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 12 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 31 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 16 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 32 and segid B)
+     or
+        ( resid 38 and segid B)
+     or
+        ( resid 59 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 17 and segid C)
+       (
+        ( resid 32 and segid B)
+     or
+        ( resid 59 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 17 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 56 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 18 and segid C)
+       (
+        ( resid 25 and segid B)
+     or
+        ( resid 56 and segid B)
+     or
+        ( resid 32 and segid B)
+     or
+        ( resid 24 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 19 and segid C)
+       (
+        ( resid 24 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 19 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 52 and segid B)
+     or
+        ( resid 11 and segid B)
+     or
+        ( resid 25 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 20 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 24 and segid B)
+     or
+        ( resid 27 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 21 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 24 and segid B)
+     or
+        ( resid 27 and segid B)
+       )  2.0 2.0 0.0
+!
+assign ( resid 23 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 32 and segid A)
+     or
+        ( resid 59 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 24 and segid C)
+       (
+        ( resid 32 and segid A)
+     or
+        ( resid 56 and segid A)
+     or
+        ( resid 59 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 25 and segid C)
+       (
+        ( resid 24 and segid A)
+     or
+        ( resid 25 and segid A)
+     or
+        ( resid 56 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 25 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 32 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 26 and segid C)
+       (
+        ( resid 24 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 26 and segid C and (name BB1 or name BB2 or name BB3))
+       (
+        ( resid 25 and segid A)
+       )  2.0 2.0 0.0
+!
+assign ( resid 27 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       (
+        ( resid 24 and segid A)
+       )  2.0 2.0 0.0
+!
+!
+! HADDOCK unambiquous restraints for molecule B
+!
+!
+assign ( resid 32 and segid B)
+       (
+        ( resid 16 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 17 and segid C)
+     or
+        ( resid 18 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 35 and segid B)
+       (
+        ( resid 10 and segid C)
+     or
+        ( resid 11 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 3 and segid B)
+       (
+        ( resid 7 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 38 and segid B)
+       (
+        ( resid 16 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 79 and segid B)
+       (
+        ( resid 53 and segid A)
+     or
+        ( resid 54 and segid A)
+     or
+        ( resid 57 and segid A)
+     or
+        ( resid 10 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 11 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 11 and segid B)
+       (
+        ( resid 19 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 76 and segid B)
+       (
+        ( resid 10 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 77 and segid B)
+       (
+        ( resid 9 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 10 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 78 and segid B)
+       (
+        ( resid 11 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 15 and segid B)
+       (
+        ( resid 8 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 16 and segid B)
+       (
+        ( resid 8 and segid C)
+     or
+        ( resid 9 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 17 and segid B)
+       (
+        ( resid 8 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 9 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 75 and segid B)
+       (
+        ( resid 9 and segid C)
+     or
+        ( resid 10 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 19 and segid B)
+       (
+        ( resid 9 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 52 and segid B)
+       (
+        ( resid 19 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 59 and segid B)
+       (
+        ( resid 16 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 17 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 56 and segid B)
+       (
+        ( resid 17 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 18 and segid C)
+       )  2.0 2.0 0.0
+!
+assign ( resid 24 and segid B)
+       (
+        ( resid 11 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 18 and segid C)
+     or
+        ( resid 19 and segid C)
+     or
+        ( resid 20 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 21 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       )  2.0 2.0 0.0
+!
+assign ( resid 25 and segid B)
+       (
+        ( resid 18 and segid C)
+     or
+        ( resid 19 and segid C and (name BB1 or name BB2 or name BB3))
+       )  2.0 2.0 0.0
+!
+assign ( resid 27 and segid B)
+       (
+        ( resid 9 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 10 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 11 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 20 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+     or
+        ( resid 21 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       )  2.0 2.0 0.0
+!
+assign ( resid 31 and segid B)
+       (
+        ( resid 10 and segid C and (name BB1 or name BB2 or name BB3))
+     or
+        ( resid 11 and segid C)
+     or
+        ( resid 12 and segid C and (name SC1 or name SC2 or name SC3 or name SC4))
+       )  2.0 2.0 0.0
+!

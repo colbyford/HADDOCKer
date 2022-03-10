@@ -1,0 +1,171 @@
+--- run.cns	2019-03-12 16:46:56.434492192 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 16:46:42.592661513 +0100
+@@ -106,11 +106,11 @@
+ {* PDB file of molecule 2 *}
+ {===>} prot_coor_mol2="daxx-simc.pdb";
+ {* PSF file of molecule 2 *}
+-{===>} prot_psf_mol2="daxx-simc.psf";
++{===>} prot_psf_mol2="daxx-simc-B.psf";
+ {* segid file of molecule 2 *}
+ {===>} prot_segid_mol2="B";
+ {* fileroot of molecule 2 *}
+-{===>} prot_root_mol2="daxx-simc";
++{===>} prot_root_mol2="daxx-simc-B";
+ {* Fix Molecule at Origin during it0 *}
+ {+ choice: true false +}
+ {===>} fix_origin_mol2=false;
+@@ -130,11 +130,11 @@
+ {* PDB file of molecule 3 *}
+ {===>} prot_coor_mol3="daxx-simc.pdb";
+ {* PSF file of molecule 3 *}
+-{===>} prot_psf_mol3="daxx-simc.psf";
++{===>} prot_psf_mol3="daxx-simc-C.psf";
+ {* segid file of molecule 3 *}
+ {===>} prot_segid_mol3="C";
+ {* fileroot of molecule 3 *}
+-{===>} prot_root_mol3="daxx-simc";
++{===>} prot_root_mol3="daxx-simc-C";
+ {* Fix Molecule at Origin during it0 *}
+ {+ choice: true false +}
+ {===>} fix_origin_mol3=false;
+@@ -554,7 +554,7 @@
+ 
+ {* Remove non-polar hydrogens? *}
+ {+ choice: true false +}
+-{===>} delenph=true;
++{===>} delenph=false;
+ 
+ {* HADDOCK directory *}
+ {*  the absolute path of the HADDOCK program files *}
+@@ -573,9 +573,9 @@
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISD for molecule 1 *}
+-{===>} numhisd_1=0;
++{===>} numhisd_1=1;
+ 
+-{===>} hisd_1_1=0;
++{===>} hisd_1_1=43;
+ {===>} hisd_1_2=0;
+ {===>} hisd_1_3=0;
+ {===>} hisd_1_4=0;
+@@ -1156,10 +1156,10 @@
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISE for molecule 1 *}
+-{===>} numhise_1=0;
++{===>} numhise_1=2;
+ 
+-{===>} hise_1_1=0;
+-{===>} hise_1_2=0;
++{===>} hise_1_1=75;
++{===>} hise_1_2=33;
+ {===>} hise_1_3=0;
+ {===>} hise_1_4=0;
+ {===>} hise_1_5=0;
+@@ -2327,12 +2327,12 @@
+ {* Fully flexible segments for molecule 2                            *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_2=0;
++{===>} nfle_2=1;
+ 
+ {* Residues of molecule 2 at interface *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+-{===>} start_fle_2_1="";
+-{===>} end_fle_2_1="";
++{===>} start_fle_2_1="725";
++{===>} end_fle_2_1="740";
+ {===>} start_fle_2_2="";
+ {===>} end_fle_2_2="";
+ {===>} start_fle_2_3="";
+@@ -2345,12 +2345,12 @@
+ {* Fully flexible segments for molecule 3                            *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_3=0;
++{===>} nfle_3=1;
+ 
+ {* Residues of molecule 3 at interface *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+-{===>} start_fle_3_1="";
+-{===>} end_fle_3_1="";
++{===>} start_fle_3_1="725";
++{===>} end_fle_3_1="740";
+ {===>} start_fle_3_2="";
+ {===>} end_fle_3_2="";
+ {===>} start_fle_3_3="";
+@@ -3991,7 +3991,7 @@
+ {===>} int_1_20=1.0;
+ {===>} int_2_1="N.A.";
+ {===>} int_2_2=1.0;
+-{===>} int_2_3=1.0;
++{===>} int_2_3=0.0;
+ {===>} int_2_4=1.0;
+ {===>} int_2_5=1.0;
+ {===>} int_2_6=1.0;
+@@ -4373,14 +4373,14 @@
+ {* Setting for the rigid-body (it0) and semi-flexible refiment (it1) *}
+ 
+ {* number of structures for rigid body docking *}
+-{===>} structures_0=1000;
++{===>} structures_0=2;
+        keepstruct_0=&structures_0;
+ {* number of structures for refinement *}
+-{===>} structures_1=200;
++{===>} structures_1=2;
+        keepstruct_1=&structures_1;
+        keepstruct_2=&structures_1;
+ {* number of structures to be analysed*}
+-{===>} anastruc_1=200;
++{===>} anastruc_1=2;
+        anastruc_0=&anastruc_1;
+        anastruc_2=&anastruc_1;
+ 
+@@ -4429,7 +4429,7 @@
+ {===>} rigidtrans=true;
+ 
+ {* Number of trials for rigid body minimisation? *}
+-{===>} ntrials=5;
++{===>} ntrials=1;
+ 
+ {* initial seed for random number generator *}
+ {* change to get different initial velocities *}
+@@ -4465,16 +4465,16 @@
+ {===>} emstepstrans=1000;
+ 
+ {* number of MD steps for rigid body high temperature TAD *}
+-{===>} initiosteps=500;
++{===>} initiosteps=10;
+ 
+ {* number of MD steps during first rigid body cooling stage *}
+-{===>} cool1_steps=500;
++{===>} cool1_steps=10;
+ 
+ {* number of MD steps during second cooling stage with flexible side-chains at interface *}
+-{===>} cool2_steps=1000;
++{===>} cool2_steps=20;
+ 
+ {* number of MD steps during third cooling stage with fully flexible interface *}
+-{===>} cool3_steps=1000;
++{===>} cool3_steps=20;
+ 
+ 
+ {======================= Solvated rigid body docking=======================}
+@@ -4555,13 +4555,13 @@
+        structures_2=&waterrefine;
+ 
+ {* number of steps for heating phase (100, 200, 300K)?      *}
+-{===>} waterheatsteps=100;
++{===>} waterheatsteps=10;
+ 
+ {* number of steps for 300K sampling phase?                 *}
+-{===>} watersteps=1250;
++{===>} watersteps=125;
+ 
+ {* number of steps for cooling phase (300, 200, 100K)?      *}
+-{===>} watercoolsteps=500;
++{===>} watercoolsteps=50;
+ 
+ {* write additional PDB files including solvent ?           *}
+ {+ choice: true false +}

@@ -1,0 +1,8 @@
+HADDOCK_DIR=../../
+N_COMP=2
+PDB_FILE1=./target86-scoring_0251_conv-A.pdb
+PDB_FILE2=./target86-scoring_0251_conv-B.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+RUN_NUMBER=1

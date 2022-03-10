@@ -1,0 +1,51 @@
+--- run.cns	2018-11-06 09:50:08.882542200 +0100
++++ ../run_ref_for_patch.cns	2018-11-06 09:50:04.125943595 +0100
+@@ -3166,12 +3166,12 @@
+  "Kvean<br>(ini_cen_cool3)" "Kvean<br>(fin_cen_cool3)"+}
+ 
+ {* Number of RDC restraint sets *}
+-{===>} numrdc=0;
++{===>} numrdc=3;
+ 
+ {+ choice: "NO" "SANI" "VANGLE" +}
+-{===>} rdc_choice_1="NO";
+-{===>} rdc_firstIt_1=2;
+-{===>} rdc_lastIt_1=2;
++{===>} rdc_choice_1="VANGLE";
++{===>} rdc_firstIt_1=0;
++{===>} rdc_lastIt_1=1;
+ {===>} rdc_hot_1=0.001;
+ {===>} rdc_cool1_1=0.02;
+ {===>} rdc_cool2_1=0.2;
+@@ -3196,8 +3196,8 @@
+ {===>} fin_cen_cool3_1=10.0;
+ 
+ {+ choice: "NO" "SANI" "XRDC" "VANGLE" +}
+-{===>} rdc_choice_2="NO";
+-{===>} rdc_firstIt_2=0;
++{===>} rdc_choice_2="VANGLE";
++{===>} rdc_firstIt_2=1;
+ {===>} rdc_lastIt_2=1;
+ {===>} rdc_hot_2=0.01;
+ {===>} rdc_cool1_2=0.2;
+@@ -3223,15 +3223,15 @@
+ {===>} fin_cen_cool3_2=10.0;
+ 
+ {+ choice: "NO" "SANI" "XRDC" "VANGLE" +}
+-{===>} rdc_choice_3="NO";
+-{===>} rdc_firstIt_3=1;
+-{===>} rdc_lastIt_3=1;
++{===>} rdc_choice_3="SANI";
++{===>} rdc_firstIt_3=2;
++{===>} rdc_lastIt_3=2;
+ {===>} rdc_hot_3=0.01;
+ {===>} rdc_cool1_3=0.2;
+ {===>} rdc_cool2_3=1.0;
+ {===>} rdc_cool3_3=1.0;
+-{===>} rdc_r_3=0.4;
+-{===>} rdc_d_3=8.0;
++{===>} rdc_r_3=0.057;
++{===>} rdc_d_3=-11.49;
+ {===>} ini_bor_hot_3=1.0;
+ {===>} fin_bor_hot_3=10.0;
+ {===>} ini_bor_cool1_3=10.0;

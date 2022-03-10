@@ -1,0 +1,130 @@
+--- run.cns	2019-03-12 13:11:43.116008557 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 13:11:34.097774479 +0100
+@@ -554,7 +554,7 @@
+ 
+ {* Remove non-polar hydrogens? *}
+ {+ choice: true false +}
+-{===>} delenph=true;
++{===>} delenph=false;
+ 
+ {* HADDOCK directory *}
+ {*  the absolute path of the HADDOCK program files *}
+@@ -2308,13 +2308,13 @@
+ {* Number of fully flexible segments for molecule 1                  *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_1=0;
++{===>} nfle_1=1;
+ 
+ {* Fully flexible segments of molecule 1 *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+ 
+-{===>} start_fle_1_1="";
+-{===>} end_fle_1_1="";
++{===>} start_fle_1_1="7";
++{===>} end_fle_1_1="180";
+ {===>} start_fle_1_2="";
+ {===>} end_fle_1_2="";
+ {===>} start_fle_1_3="";
+@@ -3047,7 +3047,7 @@
+ 
+ {* Do you want to randomly exclude a fraction of the ambiguous restraints (AIRs)? *}
+ {+ choice: true false +}
+-{===>} noecv=true;
++{===>} noecv=false;
+ 
+ {* Number of partitions for random exclusion (%excluded=100/number of partitions)? *}
+ {===>} ncvpart=2;
+@@ -3314,40 +3314,40 @@
+           cols=9 "type" "firstIt" "lastIt" "Kpcs<br>(hot)" "Kpcs<br>(cool1)" "Kpcs<br>(cool2)" "Kpcs<br>(cool3)" "R" "D" +}
+ 
+ {* Number of PCS restraint sets *}
+-{===>} numpcs=0;
++{===>} numpcs=3;
+ 
+ {+ choice: "NO" "XPCS" +}
+-{===>} pcs_choice_1="NO";
++{===>} pcs_choice_1="XPCS";
+ {===>} pcs_firstIt_1=0;
+ {===>} pcs_lastIt_1=2;
+ {===>} pcs_hot_1=100.0;
+ {===>} pcs_cool1_1=100.0;
+ {===>} pcs_cool2_1=100.0;
+ {===>} pcs_cool3_1=100.0;
+-{===>} pcs_r_1=1000;
+-{===>} pcs_d_1=10000;
++{===>} pcs_r_1=1252.81466;
++{===>} pcs_d_1=10699.98682;
+ 
+ {+ choice: "NO" "XPCS" +}
+-{===>} pcs_choice_2="NO";
++{===>} pcs_choice_2="XPCS";
+ {===>} pcs_firstIt_2=0;
+ {===>} pcs_lastIt_2=2;
+ {===>} pcs_hot_2=100.0;
+ {===>} pcs_cool1_2=100.0;
+ {===>} pcs_cool2_2=100.0;
+ {===>} pcs_cool3_2=100.0;
+-{===>} pcs_r_2=1000;
+-{===>} pcs_d_2=10000;
++{===>} pcs_r_2=-1130.79587;
++{===>} pcs_d_2=-2705.36877;
+ 
+ {+ choice: "NO" "XPCS" +}
+-{===>} pcs_choice_3="NO";
++{===>} pcs_choice_3="XPCS";
+ {===>} pcs_firstIt_3=0;
+ {===>} pcs_lastIt_3=2;
+ {===>} pcs_hot_3=100.0;
+ {===>} pcs_cool1_3=100.0;
+ {===>} pcs_cool2_3=100.0;
+ {===>} pcs_cool3_3=100.0;
+-{===>} pcs_r_3=1000;
+-{===>} pcs_d_3=10000;
++{===>} pcs_r_3=1491.01656;
++{===>} pcs_d_3=7282.39968;
+ 
+ {+ choice: "NO" "XPCS" +}
+ {===>} pcs_choice_4="NO";
+@@ -4445,13 +4445,13 @@
+ {===>} tadfinal1_t=500;
+ 
+ {* initial temperature for second TAD cooling step with flexible side-chain at the inferface *}
+-{===>} tadinit2_t=1000;
++{===>} tadinit2_t=500;
+ 
+ {* finale temperature after second cooling step *}
+ {===>} tadfinal2_t=50;
+ 
+ {* initial temperature for third TAD cooling step with fully flexible interface *}
+-{===>} tadinit3_t=1000;
++{===>} tadinit3_t=500;
+ 
+ {* finale temperature after third cooling step *}
+ {===>} tadfinal3_t=50;
+@@ -4465,10 +4465,10 @@
+ {===>} emstepstrans=1000;
+ 
+ {* number of MD steps for rigid body high temperature TAD *}
+-{===>} initiosteps=500;
++{===>} initiosteps=0;
+ 
+ {* number of MD steps during first rigid body cooling stage *}
+-{===>} cool1_steps=500;
++{===>} cool1_steps=0;
+ 
+ {* number of MD steps during second cooling stage with flexible side-chains at interface *}
+ {===>} cool2_steps=1000;
+@@ -4652,10 +4652,10 @@
+ 
+ {* Clustering method (RMSD or Fraction of Common Contacts (FCC)) *}
+ {+ choice: "RMSD" "FCC" +}
+-{===>} clust_meth="FCC";
++{===>} clust_meth="RMSD";
+ 
+ {* RMSD cutoff for clustering? (Recommended values: RMSD 7.5, FCC 0.60) *}
+-{===>} clust_cutoff=0.60;
++{===>} clust_cutoff=2.0;
+ 
+ {* Minimum cluster size? *}
+ {===>} clust_size=4;

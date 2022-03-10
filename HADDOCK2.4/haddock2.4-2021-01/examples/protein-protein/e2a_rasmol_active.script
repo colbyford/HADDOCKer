@@ -1,0 +1,5 @@
+select *
+spacefill
+colour white
+select 38,40,45,46,69,71,78,80,94,96,141
+colour red

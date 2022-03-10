@@ -1,0 +1,211 @@
+--- run.cns	2019-04-05 13:41:23.094814000 +0000
++++ ../run_ref_for_patch.cns	2019-04-05 13:41:08.744814000 +0000
+@@ -2745,34 +2745,34 @@
+ {====================== NCS restraints  =====================}
+ {* Do you want to use NCS restraints? *}
+ {+ choice: true false +}
+-{===>} ncs_on=false;
++{===>} ncs_on=true;
+ 
+ {* Force constant for NCS restraints *}
+ {===>} kncs=1.0;
+ 
+ {* Number of NCS pairs *}
+-{===>} numncs=0;
++{===>} numncs=3;
+ 
+ {* Define the segments pairs for NCS restraints *}
+ {+ table: rows=5 "pair 1" "pair 2" "pair 3" "pair 4" "pair 5" cols=6 "Start res seg1" "End res seg1" "Segid seg1" "Start res seg2" "End res seg2" "Segid seg2" +}
+-{===>} ncs_sta1_1="";
+-{===>} ncs_end1_1="";
+-{===>} ncs_seg1_1="";
+-{===>} ncs_sta2_1="";
+-{===>} ncs_end2_1="";
+-{===>} ncs_seg2_1="";
+-{===>} ncs_sta1_2="";
+-{===>} ncs_end1_2="";
+-{===>} ncs_seg1_2="";
+-{===>} ncs_sta2_2="";
+-{===>} ncs_end2_2="";
+-{===>} ncs_seg2_2="";
+-{===>} ncs_sta1_3="";
+-{===>} ncs_end1_3="";
+-{===>} ncs_seg1_3="";
+-{===>} ncs_sta2_3="";
+-{===>} ncs_end2_3="";
+-{===>} ncs_seg2_3="";
++{===>} ncs_sta1_1="32";
++{===>} ncs_end1_1="254";
++{===>} ncs_seg1_1="A";
++{===>} ncs_sta2_1="32";
++{===>} ncs_end2_1="254";
++{===>} ncs_seg2_1="B";
++{===>} ncs_sta1_2="32";
++{===>} ncs_end1_2="254";
++{===>} ncs_seg1_2="B";
++{===>} ncs_sta2_2="32";
++{===>} ncs_end2_2="254";
++{===>} ncs_seg2_2="C";
++{===>} ncs_sta1_3="32";
++{===>} ncs_end1_3="254";
++{===>} ncs_seg1_3="C";
++{===>} ncs_sta2_3="32";
++{===>} ncs_end2_3="254";
++{===>} ncs_seg2_3="D";
+ {===>} ncs_sta1_4="";
+ {===>} ncs_end1_4="";
+ {===>} ncs_seg1_4="";
+@@ -2789,7 +2789,7 @@
+ {==================== Symmetry restraints  ==================}
+ {* Do you want to use symmetry restraints ? *}
+ {+ choice: true false +}
+-{===>} sym_on=false;
++{===>} sym_on=true;
+ 
+ {* Force constant for symmetry restraints ? *}
+ {===>} ksym=10.0;
+@@ -2930,22 +2930,22 @@
+ 
+ 
+ {* Number of C4 symmetry quadruples *}
+-{===>} numc4sym=0;
++{===>} numc4sym=1;
+ 
+ {* Define the segment quadruples for C4 symmetry restraints *}
+ {+ table: rows=2 "quadruples 1" "quadruples 2" cols=12 "Start res seg1" "End res seg1" "Segid seg1" "Start res seg2" "End res seg2" "Segid seg2" "Start res seg3" "End res seg3" "Segid seg3" "Start res seg4" "End res seg4" "Segid seg4" +}
+-{===>} c4sym_sta1_1="";
+-{===>} c4sym_end1_1="";
+-{===>} c4sym_seg1_1="";
+-{===>} c4sym_sta2_1="";
+-{===>} c4sym_end2_1="";
+-{===>} c4sym_seg2_1="";
+-{===>} c4sym_sta3_1="";
+-{===>} c4sym_end3_1="";
+-{===>} c4sym_seg3_1="";
+-{===>} c4sym_sta4_1="";
+-{===>} c4sym_end4_1="";
+-{===>} c4sym_seg4_1="";
++{===>} c4sym_sta1_1="32";
++{===>} c4sym_end1_1="254";
++{===>} c4sym_seg1_1="A";
++{===>} c4sym_sta2_1="32";
++{===>} c4sym_end2_1="254";
++{===>} c4sym_seg2_1="B";
++{===>} c4sym_sta3_1="32";
++{===>} c4sym_end3_1="254";
++{===>} c4sym_seg3_1="C";
++{===>} c4sym_sta4_1="32";
++{===>} c4sym_end4_1="254";
++{===>} c4sym_seg4_1="D";
+ {===>} c4sym_sta1_2="";
+ {===>} c4sym_end1_2="";
+ {===>} c4sym_seg1_2="";
+@@ -3065,7 +3065,7 @@
+ {* Do you want to define center of mass (CM) restraints to enforce contact between the molecules? *}
+ {* Note that these are only active during it0 and it1 *}
+ {+ choice: true false +}
+-{===>} cmrest=false;
++{===>} cmrest=true;
+ 
+ {* Define tight CM restraints? *}
+ {+ choice: true false +}
+@@ -3940,7 +3940,7 @@
+ 
+ {* Use constant (cdie) or distance-dependent (rdie) dielectric in it0? *}
+ {+ choice: cdie rdie +}
+-{===>} dielec_0=rdie;
++{===>} dielec_0=cdie;
+ 
+ {* Include electrostatic during semi-flexible SA (it1)? *}
+ {+ choice: true false +}
+@@ -3951,7 +3951,7 @@
+ 
+ {* Use constant (cdie) or distance-dependent (rdie) dielectric in it0? *}
+ {+ choice: cdie rdie +}
+-{===>} dielec_1=rdie;
++{===>} dielec_1=cdie;
+ 
+ {* Scaling of intermolecular interactions for rigid body EM*}
+ {===>} inter_rigid=1.0;
+@@ -4373,10 +4373,10 @@
+ {* Setting for the rigid-body (it0) and semi-flexible refiment (it1) *}
+ 
+ {* number of structures for rigid body docking *}
+-{===>} structures_0=1000;
++{===>} structures_0=2;
+        keepstruct_0=&structures_0;
+ {* number of structures for refinement *}
+-{===>} structures_1=200;
++{===>} structures_1=2;
+        keepstruct_1=&structures_1;
+        keepstruct_2=&structures_1;
+ {* number of structures to be analysed*}
+@@ -4388,7 +4388,7 @@
+ 
+ {* Sample 180 degrees rotated solutions during rigid body EM?   *}
+ {+ choice: true false +}
+-{===>} rotate180_it0=true;
++{===>} rotate180_it0=false;
+ 
+ {* Sample 180 degrees rotated solutions during semi-flexible SA?*}
+ {+ choice: true false +}
+@@ -4429,7 +4429,7 @@
+ {===>} rigidtrans=true;
+ 
+ {* Number of trials for rigid body minimisation? *}
+-{===>} ntrials=5;
++{===>} ntrials=1;
+ 
+ {* initial seed for random number generator *}
+ {* change to get different initial velocities *}
+@@ -4462,19 +4462,19 @@
+ {===>} tadfactor=8;
+ 
+ {* Number of EM steps for translational minimisation? *}
+-{===>} emstepstrans=1000;
++{===>} emstepstrans=10;
+ 
+ {* number of MD steps for rigid body high temperature TAD *}
+-{===>} initiosteps=500;
++{===>} initiosteps=5;
+ 
+ {* number of MD steps during first rigid body cooling stage *}
+-{===>} cool1_steps=500;
++{===>} cool1_steps=5;
+ 
+ {* number of MD steps during second cooling stage with flexible side-chains at interface *}
+-{===>} cool2_steps=1000;
++{===>} cool2_steps=20;
+ 
+ {* number of MD steps during third cooling stage with fully flexible interface *}
+-{===>} cool3_steps=1000;
++{===>} cool3_steps=20;
+ 
+ 
+ {======================= Solvated rigid body docking=======================}
+@@ -4555,13 +4555,13 @@
+        structures_2=&waterrefine;
+ 
+ {* number of steps for heating phase (100, 200, 300K)?      *}
+-{===>} waterheatsteps=100;
++{===>} waterheatsteps=10;
+ 
+ {* number of steps for 300K sampling phase?                 *}
+-{===>} watersteps=1250;
++{===>} watersteps=125;
+ 
+ {* number of steps for cooling phase (300, 200, 100K)?      *}
+-{===>} watercoolsteps=500;
++{===>} watercoolsteps=50;
+ 
+ {* write additional PDB files including solvent ?           *}
+ {+ choice: true false +}
+@@ -4662,7 +4662,7 @@
+ 
+ {* Chain-Agnostic Algorithm (used for FCC clustering in symmetrical complexes) *}
+ {+ choice: "true" "false" +}
+-{===>} fcc_ignc=false;
++{===>} fcc_ignc=true;
+ 
+ {======================= final clean-up ===================================}
+ {* Clean up the run directory after completion (only files for struct #1 are kept) ? *}

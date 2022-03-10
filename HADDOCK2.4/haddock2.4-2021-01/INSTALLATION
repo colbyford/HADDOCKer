@@ -1,0 +1,108 @@
+HADDOCK2.4 INSTALLATION
+
+This file only give a rather succint description of HADDOCK and its installation instructions.
+For more details refer to: https://www.bonvinlab.org/software/haddock2.4/installation/
+
+HADDOCK consists of a collection of python and CNS scripts and other additional scripts and programs (csh, awk or gawk, perl, c++). We have been running HADDOCK without problems on linux and MacOSX systems. HADDOCK has also been installed on IBM and SGI systems, requiring modifications in some scripts to properly define the path of awk or gawk. Installation on other architectures should work but has not been tested. 
+ 
+
+### REQUIREMENTS 
+
+The current HADDOCK2.4 version requires python version 2.7 and CNS version 1.3 (which will need to be recompiled with the provided routines (see the cns1.3 directory). 
+Importantly, python2 (pointing to python2.7) should be existing on your system.
+
+
+### THIRD PARTY SOFTWARE
+
+The additional required software and licenses required to run HADDOCK (e.g. CNS) should be obtained directly from the distribution sites. (see the software links). 
+
+
+### LIMITATIONS:
+
+Note that HADDOCK is NOT supported on Windows systems. 
+
+
+### INSTALLATION INSTRUCTIONS
+
+The HADDOCK distribution comes as a gzipped tar file haddock2.4.tgz. To install HADDOCK uncompress this file and untar it with:
+
+    tar xvfz haddock2.4.tgz
+
+This will create a directory called haddock2.4 containing various subdirectories:
+
+* Haddock: contains all the python scripts
+
+* cgi: cgi scripts (these are installed on our web server). You can install them 
+       locally on your server and modify the html files to access them.
+
+* cns1.3: contains a number of CNS routines (including the VEAN statement) with a 
+       few small modifications use with HADDOCK. We recommend to recompile CNS with these routines.
+
+* examples: contains examples for running HADDOCK
+
+* examples-run-data: contains a script with which pre-calculates example runs can be downlaoded
+
+* html: contains the HADDOCK documentation in html format 
+       (check the HADDOCK2.4 online page for the most recent updates)
+
+* protocols: contains the CNS scripts
+
+* tests: a short version of the examples to test modifications to the sofware
+
+* tools: contains various awk, csh and perl scripts for preparation of PDB files and analysis 
+
+  NOTE: check that the correct location of awk, gawk and perl are defined for your system 
+        in the various awk and perl scripts.
+
+* toppar: contains CNS topology and parameter files.
+
+* RDCtools: contains scripts (python and gawk) to generate RDC restraints (SANI) 
+      or intervector projection angle restraints (VEAN) including examples. See RDC restraints for information.
+
+* DANItools: contains scripts (csh and gawk) to generate diffusion anisotropy restraints (DANI),
+      calculate tensor parameters and analyze PDB files. See DANI restraints for information.
+
+
+In the main haddock directory you will find an install file named install.csh
+Call it with as argumnt a config file. Two examples are provided, one for running locally (config.local)
+and one for running using a batch system (config.batch-system). Adapt those to your settings, locations of executable.
+
+Calling the install.csh script will generate two setup files named haddock_configure.csh and haddock_configure.sh 
+
+It will also compile a number of utilities. 
+If needed, edit the Makefile files in tools to define the c++ compiler and compiler flags. 
+
+To initialize and run HADDOCK then simply source the haddock_configure.csh file with e.g. under csh/tcsh:
+
+   source haddock_configure.csh
+
+
+You can also control the way jobs are run by editing the Haddock/Main/MHaddock.py file.
+Since HADDOCK jobs can be very short, you might want to concatenate several jobs into one, especially to lower
+the load on a queueing system. In MHaddock.py you will find the following lines:
+
+#values for running locally in csh (or node) mode
+jobconcat["0"] = 1
+jobconcat["1"] = 1
+jobconcat["2"] = 1
+#values for running via a batch system
+#jobconcat["0"] = 10
+#jobconcat["1"] = 2
+#jobconcat["2"] = 2
+#values for grid submission
+#jobconcat["0"] = 100
+#jobconcat["1"] = 20
+#jobconcat["2"] = 20
+
+Also, when using a batch system and running on remote nodes, you can lower the load on the network by
+instructing HADDOCK to write output files temporarly in the local /tmp directory of the nodes. 
+Those outputs are moved to the main run directory upon job completion.
+For this set tmpout to true in MHaddock.py:
+
+#define the job behavior (using local /tmp or not)
+# - for grid submission set to false
+# - for local runs, if the network is a bottleneck better set it to true
+tmpout=False
+
+
+

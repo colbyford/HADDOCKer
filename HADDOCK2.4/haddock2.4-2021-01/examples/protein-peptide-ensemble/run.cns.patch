@@ -1,0 +1,78 @@
+--- run.cns	2018-11-05 14:12:34.834600432 +0100
++++ ../run_ref_for_patch.cns	2018-11-05 14:12:30.240989148 +0100
+@@ -554,7 +554,7 @@
+ 
+ {* Remove non-polar hydrogens? *}
+ {+ choice: true false +}
+-{===>} delenph=true;
++{===>} delenph=false;
+ 
+ {* HADDOCK directory *}
+ {*  the absolute path of the HADDOCK program files *}
+@@ -570,9 +570,9 @@
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISD for molecule 1 *}
+-{===>} numhisd_1=0;
++{===>} numhisd
+ 
+-{===>} hisd_1_1=0;
++{===>} hisd_1_1=43;
+ {===>} hisd_1_2=0;
+ {===>} hisd_1_3=0;
+ {===>} hisd_1_4=0;
+@@ -1153,10 +1153,10 @@
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISE for molecule 1 *}
+-{===>} numhise_1=0;
++{===>} numhise_1=2;
+ 
+-{===>} hise_1_1=0;
+-{===>} hise_1_2=0;
++{===>} hise_1_1=75;
++{===>} hise_1_2=33;
+ {===>} hise_1_3=0;
+ {===>} hise_1_4=0;
+ {===>} hise_1_5=0;
+@@ -2324,12 +2324,12 @@
+ {* Fully flexible segments for molecule 2                            *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_2=0;
++{===>} nfle_2=1;
+ 
+ {* Residues of molecule 2 at interface *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+-{===>} start_fle_2_1="";
+-{===>} end_fle_2_1="";
++{===>} start_fle_2_1="725";
++{===>} end_fle_2_1="740";
+ {===>} start_fle_2_2="";
+ {===>} end_fle_2_2="";
+ {===>} start_fle_2_3="";
+@@ -2342,12 +2342,12 @@
+ {* Fully flexible segments for molecule 3                            *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_3=0;
++{===>} nfle_3=1;
+ 
+ {* Residues of molecule 3 at interface *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+-{===>} start_fle_3_1="";
+-{===>} end_fle_3_1="";
++{===>} start_fle_3_1="725";
++{===>} end_fle_3_1="740";
+ {===>} start_fle_3_2="";
+ {===>} end_fle_3_2="";
+ {===>} start_fle_3_3="";
+@@ -3981,7 +3981,7 @@
+ {===>} int_1_20=1.0;
+ {===>} int_2_1="N.A.";
+ {===>} int_2_2=1.0;
+-{===>} int_2_3=1.0;
++{===>} int_2_3=0.0;
+ {===>} int_2_4=1.0;
+ {===>} int_2_5=1.0;
+ {===>} int_2_6=1.0;

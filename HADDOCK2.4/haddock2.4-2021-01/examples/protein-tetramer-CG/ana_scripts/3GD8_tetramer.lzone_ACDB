@@ -1,0 +1,5 @@
+zone A*:A*
+fit
+rzone B*:C*
+rzone C*:D*
+rzone D*:B*

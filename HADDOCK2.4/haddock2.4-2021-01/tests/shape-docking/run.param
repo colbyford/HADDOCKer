@@ -1,0 +1,11 @@
+AMBIG_TBL=./ambig_4A.tbl
+HADDOCK_DIR=../../
+N_COMP=3
+PDB_FILE1=./proteinA.pdb
+PDB_FILE2=./proteinB.pdb
+PDB_FILE3=./shape.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+PROT_SEGID_3=S
+RUN_NUMBER=1

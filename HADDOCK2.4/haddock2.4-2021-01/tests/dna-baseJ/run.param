@@ -1,0 +1,6 @@
+HADDOCK_DIR=../../
+N_COMP=1
+PDB_FILE1=./basej_DNA_haddock.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=a
+RUN_NUMBER=1

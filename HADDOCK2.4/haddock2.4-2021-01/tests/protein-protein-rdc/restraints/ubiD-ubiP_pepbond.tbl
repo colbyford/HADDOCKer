@@ -1,0 +1,5 @@
+assign (name O and resid 76 and segid A) (name NZ and resid 48 and segid B) 2.25 0.05 0.05
+assign (name C and resid 76 and segid A) (name NZ and resid 48 and segid B) 1.35 0.05 0.05
+assign (name C and resid 76 and segid A) (name CE and resid 48 and segid B) 2.45 0.05 0.05
+assign (name CA and resid 76 and segid A) (name NZ and resid 48 and segid B) 2.45 0.05 0.05
+

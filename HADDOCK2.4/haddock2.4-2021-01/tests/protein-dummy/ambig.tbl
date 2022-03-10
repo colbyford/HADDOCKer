@@ -1,0 +1,5 @@
+! User defined ambiguous restraints
+assign (segid B and (name CB or name SC*) and resid 50) (segid F and (name DUM or name CB or name SC*) and resid 91) 30.0 30.0 0.0
+assign (segid B and (name CB or name SC*) and resid 604) (segid F and (name DUM or name CB or name SC*) and resid 66) 30.0 30.0 0.0
+assign (segid B and (name CB or name SC*) and resid 605) (segid F and (name DUM or name CB or name SC*) and resid 91) 30.0 30.0 0.0
+assign (segid B and (name CB or name SC*) and resid 612) (segid F and (name DUM or name CB or name SC*) and resid 57) 30.0 30.0 0.0

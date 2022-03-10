@@ -1,0 +1,37 @@
+3CRO protein-DNA test case
+==========================
+
+AIR definition based on biochemical and footprinting data 
+
+See:
+M. van Dijk, A.D.J. van Dijk, V. Hsu, R. Boelens and A.M.J.J. Bonvin
+"Information-driven Protein-DNA Docking using HADDOCK: it is a matter of flexibility."
+Nucl. Acids Res., 34 3317-3325 (2006).
+
+M. van Dijk and A.M.J.J. Bonvin
+"Pushing the limits of what is achievable in protein-DNA docking. Benchmarking HADDOCK's performance."
+Nucl. Acid Res., 38, 5634-5647 (2010).
+
+Examples run files are:
+run_ref_for_patch.cns: docking with AIRs, automatic flexible interface definition
+
+
+# FOR RUNNING THE EXAMPLE 
+#
+# first source the haddock_configure.csh scripts for your version of HADDOCK
+
+source ./run-example.csh >&haddock-protein-dna.out&
+
+# and when complete, check the protein-dna-test.out for differences with the reference run stored in the refe directory
+
+
+# UPDATING THE PATCH FILE - FOR HADDOCK DEVELOPERS
+
+# To create the patch (need to be done only when the default run.cns change too much
+# and this is detected when the patch doesn't work anymore, you should:
+# 1. Create a normal run1 dir.
+# 2. Copy run1/run.cns to run_ref_for_patch.cns
+# 3. Edit run_ref_for_patch.cns for the needs of the docking
+# 4. Create the patch file:
+cd run1
+diff -Nur run.cns ../run_ref_for_patch.cns > ../run.cns.patch

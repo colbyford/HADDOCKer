@@ -1,0 +1,121 @@
+--- run.cns	2019-03-12 16:52:47.417834644 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 16:52:43.129197108 +0100
+@@ -137,7 +137,7 @@
+ {===>} prot_root_mol3="shape";
+ {* Fix Molecule at Origin during it0 *}
+ {+ choice: true false +}
+-{===>} fix_origin_mol3=false;
++{===>} fix_origin_mol3=true;
+ {* Is molecule 3 DNA? *}
+ {+ choice: true false +}
+ {===>} dna_mol3=false;
+@@ -146,7 +146,7 @@
+ {===>} cyclicpept_mol3=false;
+ {* Is molecule 3 a shape? *}
+ {+ choice: true false +}
+-{===>} shape_mol3=false;
++{===>} shape_mol3=true;
+ {* Coarse grained molecule? *}
+ {+ choice: true false +}
+ {===>} cg_mol3=false;
+@@ -1800,7 +1800,7 @@
+ {* number of semi-flexible segments for molecule 3 (-1 for automated mode) *}
+ {* Note that current max is 10 (edit the run.cns to add more segments    *}
+ 
+-{===>} nseg_3=-1;
++{===>} nseg_3=0;
+ 
+ {* Residues of molecule 3 at interface *}
+ {+ table: rows=10 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" "segment 6" "segment 7" "segment 8" "segment 9" "segment 10" cols=2 "Start residue" "End residue" +}
+@@ -3673,7 +3673,7 @@
+ {* topology file for molecule 2 *}
+ {===>} prot_top_mol2="protein-allhdg5-4.top";
+ {* topology file for molecule 3 *}
+-{===>} prot_top_mol3="protein-allhdg5-4.top";
++{===>} prot_top_mol3="shape.top";
+ {* topology file for molecule 4 *}
+ {===>} prot_top_mol4="protein-allhdg5-4.top";
+ {* topology file for molecule 5 *}
+@@ -3714,7 +3714,7 @@
+ {* linkage file for molecule 2 *}
+ {===>} prot_link_mol2="protein-allhdg5-4-noter.link";
+ {* linkage file for molecule 3 *}
+-{===>} prot_link_mol3="protein-allhdg5-4-noter.link";
++{===>} prot_link_mol3="shape.link";
+ {* linkage file for molecule 4 *}
+ {===>} prot_link_mol4="protein-allhdg5-4-noter.link";
+ {* linkage file for molecule 5 *}
+@@ -3755,7 +3755,7 @@
+ {* energy parameter file for molecule 2 *}
+ {===>} prot_par_mol2="protein-allhdg5-4.param";
+ {* energy parameter file for molecule 3 *}
+-{===>} prot_par_mol3="protein-allhdg5-4.param";
++{===>} prot_par_mol3="shape.param";
+ {* energy parameter file for molecule 4 *}
+ {===>} prot_par_mol4="protein-allhdg5-4.param";
+ {* energy parameter file for molecule 5 *}
+@@ -4373,14 +4373,14 @@
+ {* Setting for the rigid-body (it0) and semi-flexible refiment (it1) *}
+ 
+ {* number of structures for rigid body docking *}
+-{===>} structures_0=1000;
++{===>} structures_0=2;
+        keepstruct_0=&structures_0;
+ {* number of structures for refinement *}
+-{===>} structures_1=200;
++{===>} structures_1=2;
+        keepstruct_1=&structures_1;
+        keepstruct_2=&structures_1;
+ {* number of structures to be analysed*}
+-{===>} anastruc_1=200;
++{===>} anastruc_1=2;
+        anastruc_0=&anastruc_1;
+        anastruc_2=&anastruc_1;
+ 
+@@ -4429,7 +4429,7 @@
+ {===>} rigidtrans=true;
+ 
+ {* Number of trials for rigid body minimisation? *}
+-{===>} ntrials=5;
++{===>} ntrials=2;
+ 
+ {* initial seed for random number generator *}
+ {* change to get different initial velocities *}
+@@ -4465,16 +4465,16 @@
+ {===>} emstepstrans=1000;
+ 
+ {* number of MD steps for rigid body high temperature TAD *}
+-{===>} initiosteps=500;
++{===>} initiosteps=10;
+ 
+ {* number of MD steps during first rigid body cooling stage *}
+-{===>} cool1_steps=500;
++{===>} cool1_steps=10;
+ 
+ {* number of MD steps during second cooling stage with flexible side-chains at interface *}
+-{===>} cool2_steps=1000;
++{===>} cool2_steps=20;
+ 
+ {* number of MD steps during third cooling stage with fully flexible interface *}
+-{===>} cool3_steps=1000;
++{===>} cool3_steps=20;
+ 
+ 
+ {======================= Solvated rigid body docking=======================}
+@@ -4555,13 +4555,13 @@
+        structures_2=&waterrefine;
+ 
+ {* number of steps for heating phase (100, 200, 300K)?      *}
+-{===>} waterheatsteps=100;
++{===>} waterheatsteps=10;
+ 
+ {* number of steps for 300K sampling phase?                 *}
+-{===>} watersteps=1250;
++{===>} watersteps=125;
+ 
+ {* number of steps for cooling phase (300, 200, 100K)?      *}
+-{===>} watercoolsteps=500;
++{===>} watercoolsteps=50;
+ 
+ {* write additional PDB files including solvent ?           *}
+ {+ choice: true false +}

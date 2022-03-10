@@ -1,0 +1,19 @@
+#!/bin/csh
+#
+if ($#argv < 1) goto usage
+
+awk '{print $2"_"$1}' $argv |sort |uniq |sed -e 's/_/\ /g' >tmp1
+awk '{print $5"_"$4}' $argv |sort |uniq |sed -e 's/_/\ /g' >tmp2
+cat tmp1 |awk '{print "zone "$1$2"-"$1$2}' 
+cat tmp2 |awk '{print "zone "$1$2"-"$1$2}' 
+\rm tmp1 tmp2
+
+goto exit
+
+usage:
+echo 'make_izone  takes as argument a list of intermolecular contacts' 
+echo '            generated with the contact program'
+echo ' '
+echo '  useage: make_izone contact_file [>output_file (optional)]'
+
+exit:

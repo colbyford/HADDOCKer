@@ -1,0 +1,112 @@
+--- run.cns	2020-08-12 14:51:10.000000000 +0200
++++ ../run_ref_for_patch.cns	2020-08-12 14:50:55.000000000 +0200
+@@ -554,7 +554,7 @@
+ 
+ {* Remove non-polar hydrogens? *}
+ {+ choice: true false +}
+-{===>} delenph=true;
++{===>} delenph=false;
+ 
+ {* HADDOCK directory *}
+ {*  the absolute path of the HADDOCK program files *}
+@@ -2311,13 +2311,13 @@
+ {* Number of fully flexible segments for molecule 1                  *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_1=0;
++{===>} nfle_1=1;
+ 
+ {* Fully flexible segments of molecule 1 *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+ 
+-{===>} start_fle_1_1="";
+-{===>} end_fle_1_1="";
++{===>} start_fle_1_1="1";
++{===>} end_fle_1_1="999";
+ {===>} start_fle_1_2="";
+ {===>} end_fle_1_2="";
+ {===>} start_fle_1_3="";
+@@ -3050,7 +3050,7 @@
+ 
+ {* Do you want to randomly exclude a fraction of the ambiguous restraints (AIRs)? *}
+ {+ choice: true false +}
+-{===>} noecv=true;
++{===>} noecv=false;
+ 
+ {* Number of partitions for random exclusion (%excluded=100/number of partitions)? *}
+ {===>} ncvpart=2;
+@@ -4376,14 +4376,14 @@
+ {* Setting for the rigid-body (it0) and semi-flexible refiment (it1) *}
+ 
+ {* number of structures for rigid body docking *}
+-{===>} structures_0=1000;
++{===>} structures_0=2;
+        keepstruct_0=&structures_0;
+ {* number of structures for refinement *}
+-{===>} structures_1=200;
++{===>} structures_1=2;
+        keepstruct_1=&structures_1;
+        keepstruct_2=&structures_1;
+ {* number of structures to be analysed*}
+-{===>} anastruc_1=200;
++{===>} anastruc_1=2;
+        anastruc_0=&anastruc_1;
+        anastruc_2=&anastruc_1;
+ 
+@@ -4391,7 +4391,7 @@
+ 
+ {* Sample 180 degrees rotated solutions during rigid body EM?   *}
+ {+ choice: true false +}
+-{===>} rotate180_it0=true;
++{===>} rotate180_it0=false;
+ 
+ {* Sample 180 degrees rotated solutions during semi-flexible SA?*}
+ {+ choice: true false +}
+@@ -4432,7 +4432,7 @@
+ {===>} rigidtrans=true;
+ 
+ {* Number of trials for rigid body minimisation? *}
+-{===>} ntrials=5;
++{===>} ntrials=1;
+ 
+ {* initial seed for random number generator *}
+ {* change to get different initial velocities *}
+@@ -4468,16 +4468,16 @@
+ {===>} emstepstrans=1000;
+ 
+ {* number of MD steps for rigid body high temperature TAD *}
+-{===>} initiosteps=500;
++{===>} initiosteps=5;
+ 
+ {* number of MD steps during first rigid body cooling stage *}
+-{===>} cool1_steps=500;
++{===>} cool1_steps=5;
+ 
+ {* number of MD steps during second cooling stage with flexible side-chains at interface *}
+-{===>} cool2_steps=1000;
++{===>} cool2_steps=10;
+ 
+ {* number of MD steps during third cooling stage with fully flexible interface *}
+-{===>} cool3_steps=1000;
++{===>} cool3_steps=10;
+ 
+ 
+ {======================= Solvated rigid body docking=======================}
+@@ -4546,7 +4546,7 @@
+ {* Build explicit solvent shell? (Can be turned off the large molecules or when morphing CG to AA models) *}
+ {* Only EM will then be performed                                                                         *}
+ {+ choice: true false +}
+-{===>} solvshell=false;
++{===>} solvshell=true;
+ 
+ {* Which solvent do you want to use? *}
+ {+ choice: "water" "dmso" +}
+@@ -4554,7 +4554,7 @@
+ 
+ {* number of structures for the explicit solvent refinement *}
+ {* the n best structures will be refined                    *}
+-{===>} waterrefine=200;
++{===>} waterrefine=2;
+        structures_2=&waterrefine;
+ 
+ {* number of steps for heating phase (100, 200, 300K)?      *}

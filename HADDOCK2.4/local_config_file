@@ -1,4 +1,4 @@
-set CNSTMP=/software/cns_solve_1.3/intel-x86_64bit-linux/source/cns_solve-1111091055.exe
+set CNSTMP=/software/cns_solve_1.3/intel-x86_64bit-linux/source/cns_solve-2202111803.exe
 set QUEUETMP=/bin/tcsh
 set NUMJOB=4
 set QUEUESUB=QueueSubmit_concat.py

@@ -1,0 +1,12 @@
+AMBIG_TBL=./ambig.tbl
+HADDOCK_DIR=../../
+N_COMP=3
+PDB_FILE1=./2bf8_sumo1.pdb
+PDB_FILE2=./daxx-simc_1.pdb
+PDB_FILE3=./daxx-simc_2.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+PROT_SEGID_3=C
+RUN_NUMBER=1
+UNAMBIG_TBL=./unambig.tbl

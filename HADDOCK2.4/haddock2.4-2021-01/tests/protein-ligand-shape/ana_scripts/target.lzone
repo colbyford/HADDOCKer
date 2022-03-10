@@ -1,0 +1,5 @@
+    zone A1-A157
+    zone A170-A385
+    fit
+    ratoms ^H*
+    rzone B*

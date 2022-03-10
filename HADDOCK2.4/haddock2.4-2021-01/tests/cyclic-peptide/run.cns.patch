@@ -1,0 +1,98 @@
+--- run.cns	2019-03-12 15:32:15.702709305 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 15:32:10.149180983 +0100
+@@ -2308,13 +2308,13 @@
+ {* Number of fully flexible segments for molecule 1                  *}
+ {* Note that current max is 5 (edit the run.cns to add more segments *}
+ 
+-{===>} nfle_1=0;
++{===>} nfle_1=1;
+ 
+ {* Fully flexible segments of molecule 1 *}
+ {+ table: rows=5 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" cols=2 "Start residue" "End residue" +}
+ 
+-{===>} start_fle_1_1="";
+-{===>} end_fle_1_1="";
++{===>} start_fle_1_1="1";
++{===>} end_fle_1_1="6";
+ {===>} start_fle_1_2="";
+ {===>} end_fle_1_2="";
+ {===>} start_fle_1_3="";
+@@ -4373,14 +4373,14 @@
+ {* Setting for the rigid-body (it0) and semi-flexible refiment (it1) *}
+ 
+ {* number of structures for rigid body docking *}
+-{===>} structures_0=1000;
++{===>} structures_0=2;
+        keepstruct_0=&structures_0;
+ {* number of structures for refinement *}
+-{===>} structures_1=200;
++{===>} structures_1=2;
+        keepstruct_1=&structures_1;
+        keepstruct_2=&structures_1;
+ {* number of structures to be analysed*}
+-{===>} anastruc_1=200;
++{===>} anastruc_1=2;
+        anastruc_0=&anastruc_1;
+        anastruc_2=&anastruc_1;
+ 
+@@ -4388,7 +4388,7 @@
+ 
+ {* Sample 180 degrees rotated solutions during rigid body EM?   *}
+ {+ choice: true false +}
+-{===>} rotate180_it0=true;
++{===>} rotate180_it0=false;
+ 
+ {* Sample 180 degrees rotated solutions during semi-flexible SA?*}
+ {+ choice: true false +}
+@@ -4429,7 +4429,7 @@
+ {===>} rigidtrans=true;
+ 
+ {* Number of trials for rigid body minimisation? *}
+-{===>} ntrials=5;
++{===>} ntrials=1;
+ 
+ {* initial seed for random number generator *}
+ {* change to get different initial velocities *}
+@@ -4465,16 +4465,16 @@
+ {===>} emstepstrans=1000;
+ 
+ {* number of MD steps for rigid body high temperature TAD *}
+-{===>} initiosteps=500;
++{===>} initiosteps=50;
+ 
+ {* number of MD steps during first rigid body cooling stage *}
+-{===>} cool1_steps=500;
++{===>} cool1_steps=50;
+ 
+ {* number of MD steps during second cooling stage with flexible side-chains at interface *}
+-{===>} cool2_steps=1000;
++{===>} cool2_steps=100;
+ 
+ {* number of MD steps during third cooling stage with fully flexible interface *}
+-{===>} cool3_steps=1000;
++{===>} cool3_steps=100;
+ 
+ 
+ {======================= Solvated rigid body docking=======================}
+@@ -4551,17 +4551,17 @@
+ 
+ {* number of structures for the explicit solvent refinement *}
+ {* the n best structures will be refined                    *}
+-{===>} waterrefine=200;
++{===>} waterrefine=10;
+        structures_2=&waterrefine;
+ 
+ {* number of steps for heating phase (100, 200, 300K)?      *}
+-{===>} waterheatsteps=100;
++{===>} waterheatsteps=10;
+ 
+ {* number of steps for 300K sampling phase?                 *}
+-{===>} watersteps=1250;
++{===>} watersteps=125;
+ 
+ {* number of steps for cooling phase (300, 200, 100K)?      *}
+-{===>} watercoolsteps=500;
++{===>} watercoolsteps=50;
+ 
+ {* write additional PDB files including solvent ?           *}
+ {+ choice: true false +}

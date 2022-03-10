@@ -1,0 +1,37 @@
+--- ./run.cns	2019-03-12 11:30:00.289518552 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 11:29:54.207031472 +0100
+@@ -3510,17 +3510,17 @@
+ 
+ {* Centroid definitions *}
+ {+ choice: true false +}
+-{===>} centroid_rest=false;
++{===>} centroid_rest=true;
+ {===>} centroid_kscale=50.0;
+ 
+ {* Placement of centroids in absolute coordinates *}
+-{===>} xcom_1=12.3;
+-{===>} ycom_1=0.8;
+-{===>} zcom_1=9.2;
+-
+-{===>} xcom_2=12.7;
+-{===>} ycom_2=-3.4;
+-{===>} zcom_2=29.7;
++{===>} xcom_1=11.39;
++{===>} ycom_1=-1.65;
++{===>} zcom_1=74.31;
++
++{===>} xcom_2=18.66;
++{===>} ycom_2=5.29;
++{===>} zcom_2=57.72;
+ 
+ {===>} xcom_3=0.0;
+ {===>} ycom_3=0.0;
+@@ -3638,7 +3638,7 @@
+ 
+ {* Density/XREF restraints *}
+ {+ choice: true false +}
+-{===>} em_rest=false;
++{===>} em_rest=true;
+ {===>} em_kscale=15000;
+ {+ choice: true false +}
+ {===>} em_it0=true;

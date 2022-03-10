@@ -1,0 +1,59 @@
+Python scripts written by Wayne Boucher for analysing
+residual dipolar coupling data to create vector angle restraints.
+Ref: Meiler et al: J. Biomol. NMR Vol 16 pg 245-252 (2000)
+
+********************************************************************						
+1. Creation of restraints file:
+usage:
+python dipolar.py input_file output_file Dxx Dyy Dzz
+
+where input_file format is:
+
+ID	Value		header line - this is *necessary*
+6	10.7831		tab de-limited
+
+output_file gives you xplor/cns restraints file.
+Restraints are ordered according to how much of the angle between the two
+NH vectors has been excluded, with the most restrictive restraints first.
+Fraction excluded for each restraints is given as a comment at the end.
+
+When the script is run it tells you how many couplings you have. Check
+this to make sure it can find all your data. 
+
+********************************************************************						
+2. Comparison to a pdb file:
+usage:
+python dipolar_pdb.py input_file pdbfile output_file Dxx Dyy Dzz
+
+input file format as above. 
+
+When you run the script it tells you how many dipolar pairs were found and 
+how many are OK in the pdb file. 
+Uses real pdb format so that NH is called 'H'
+
+Output file has the form:
+
+id1     id2     excluded        pmin1   pmax1   pmin2   pmax2   phi    		 ok
+
+NH(1)	NH(2)	fraction excl.	range of value for phi		actal value	0 if violated
+				from vector angles		of phi in pdb	1 if satisfied
+								file
+
+********************************************************************						
+Included in this distribution:
+dipolar.py		} python scripts
+dipolar_pdb.py		}
+
+ras_dmpc.rdb		test input data - dipolar couplings for Ras
+ras.pdb			Ras crystal structure (H built using Molmol)
+ras_dipolar.out		generated from dipolar.py using :
+			Dxx=7.07, Dyy=20.93, Dzz=-28.0
+			these numbers came from powder patterns and grid searches
+ras_pdb_comp.out	generated from dipolar_pdb.py using same tensor definition
+			as above
+			
+********************************************************************						
+			
+			
+This README file was written by Helen Mott - any complaints about it to me, not
+Wayne.

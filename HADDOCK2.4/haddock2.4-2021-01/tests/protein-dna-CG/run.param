@@ -1,0 +1,15 @@
+HADDOCK_DIR=../../
+PDB_FILE1=./1RXR_unbound-protA-1.pdb
+PDB_FILE2=./1RXR_unbound-protB-1.pdb
+PDB_FILE3=./DNA_unbound.pdb
+CGPDB_FILE1=./1RXR_unbound-protA-1_cg.pdb
+CGPDB_FILE2=./1RXR_unbound-protB-1_cg.pdb
+CGPDB_FILE3=./DNA_unbound_cg.pdb
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+PROT_SEGID_3=C
+AMBIG_TBL=./air_trueiface_unbound-cg.tbl
+CGTOAA_TBL=./cg2aa.tbl
+N_COMP=3
+PROJECT_DIR=./
+RUN_NUMBER=1

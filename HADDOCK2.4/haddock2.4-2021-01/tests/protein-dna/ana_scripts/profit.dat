@@ -1,0 +1,41 @@
+Bound to unbound residue mapping
+--------------------------------
+Complex PDB: 3CRO
+Complex PDB: 1ZUG
+Complex PDB: 1ZUG
+--------------------------------
+
+DNA all residues:
+B1-B39
+
+DNA interface residues:
+B3-B7:B3-B7
+B12-B18:B12-B18
+B21-B25:B21-B25
+B29-B36:B29-B36
+
+Protein all residues:
+A1-A65
+
+Protein interface residues:
+A9-A9:A9-A9
+A12-A13:A12-A13
+A18-A20:A18-A20
+A27-A32:A27-A32
+A34-A37:A34-A37
+A40-A49:A40-A49
+A52-A52:A52-A52
+A58-A59:A58-A59
+A62-A63:A62-A63
+
+Protein all residues:
+C1-C64
+
+Protein interface residues:
+C12-C12:C12-C12
+C17-C20:C17-C20
+C28-C32:C28-C32
+C34-C37:C34-C37
+C40-C49:C40-C49
+C58-C59:C58-C59
+C62-C63:C62-C63

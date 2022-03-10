@@ -1,0 +1,17 @@
+CGTOAA_TBL=./cg-to-aa.tbl
+N_COMP=4
+PDB_FILE1=./chainA.pdb
+PDB_FILE2=./chainB.pdb
+PDB_FILE3=./chainC.pdb
+PDB_FILE4=./chainD.pdb
+CGPDB_FILE1=./chainA_cg.pdb
+CGPDB_FILE2=./chainB_cg.pdb
+CGPDB_FILE3=./chainC_cg.pdb
+CGPDB_FILE4=./chainD_cg.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+PROT_SEGID_3=C
+PROT_SEGID_4=D
+RUN_NUMBER=1
+HADDOCK_DIR=../../

@@ -1,0 +1,9 @@
+HADDOCK_DIR=../../
+N_COMP=2
+PDB_FILE1=./2pyo_clean-1.pdb
+PDB_FILE2=./2pyo_clean-2.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+RUN_NUMBER=1
+UNAMBIG_TBL=./unambig.tbl

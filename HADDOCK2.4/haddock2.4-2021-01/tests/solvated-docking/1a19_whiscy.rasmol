@@ -1,0 +1,11 @@
+select *
+spacefill
+color white
+echo Red residues: predicted active residues
+select 34, 31, 35, 29, 30, 39
+color red
+echo Green residues: predicted passive residues
+select 44, 18, 28, 66, 69, 13, 32, 42, 33, 43
+color green
+select *
+

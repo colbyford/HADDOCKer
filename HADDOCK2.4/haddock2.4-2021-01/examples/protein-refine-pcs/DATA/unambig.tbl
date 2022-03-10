@@ -1,0 +1,5 @@
+! contraints for Mn2+ (resid 190)
+assign (resid   167 and  name OD2 and segid A )(resid  190 and segid A) 2.5 1.3 0.8 !#
+assign (resid   12 and  name OD1 and segid A  )(resid  190 and segid A) 2.5 1.3 0.8 !#
+assign (resid   12 and  name OD2 and segid A  )(resid  190 and segid A) 2.5 1.3 0.8 !#
+assign (resid   14 and  name OE2 and segid A  )(resid  190 and segid A) 2.5 1.3 0.8 !#

@@ -1,0 +1,80 @@
+--- ./run.cns	2019-03-12 11:31:16.766069581 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 11:31:07.830823046 +0100
+@@ -3047,7 +3047,7 @@
+ 
+ {* Do you want to randomly exclude a fraction of the ambiguous restraints (AIRs)? *}
+ {+ choice: true false +}
+-{===>} noecv=true;
++{===>} noecv=false;
+ 
+ {* Number of partitions for random exclusion (%excluded=100/number of partitions)? *}
+ {===>} ncvpart=2;
+@@ -3065,7 +3065,7 @@
+ {* Do you want to define center of mass (CM) restraints to enforce contact between the molecules? *}
+ {* Note that these are only active during it0 and it1 *}
+ {+ choice: true false +}
+-{===>} cmrest=false;
++{===>} cmrest=true;
+ 
+ {* Define tight CM restraints? *}
+ {+ choice: true false +}
+@@ -3314,40 +3314,40 @@
+           cols=9 "type" "firstIt" "lastIt" "Kpcs<br>(hot)" "Kpcs<br>(cool1)" "Kpcs<br>(cool2)" "Kpcs<br>(cool3)" "R" "D" +}
+ 
+ {* Number of PCS restraint sets *}
+-{===>} numpcs=0;
++{===>} numpcs=3;
+ 
+ {+ choice: "NO" "XPCS" +}
+-{===>} pcs_choice_1="NO";
++{===>} pcs_choice_1="XPCS";
+ {===>} pcs_firstIt_1=0;
+ {===>} pcs_lastIt_1=2;
+ {===>} pcs_hot_1=100.0;
+ {===>} pcs_cool1_1=100.0;
+ {===>} pcs_cool2_1=100.0;
+ {===>} pcs_cool3_1=100.0;
+-{===>} pcs_r_1=1000;
+-{===>} pcs_d_1=10000;
++{===>} pcs_r_1=1252.81466;
++{===>} pcs_d_1=10699.98682;
+ 
+ {+ choice: "NO" "XPCS" +}
+-{===>} pcs_choice_2="NO";
++{===>} pcs_choice_2="XPCS";
+ {===>} pcs_firstIt_2=0;
+ {===>} pcs_lastIt_2=2;
+ {===>} pcs_hot_2=100.0;
+ {===>} pcs_cool1_2=100.0;
+ {===>} pcs_cool2_2=100.0;
+ {===>} pcs_cool3_2=100.0;
+-{===>} pcs_r_2=1000;
+-{===>} pcs_d_2=10000;
++{===>} pcs_r_2=-1130.79587;
++{===>} pcs_d_2=-2705.36877;
+ 
+ {+ choice: "NO" "XPCS" +}
+-{===>} pcs_choice_3="NO";
++{===>} pcs_choice_3="XPCS";
+ {===>} pcs_firstIt_3=0;
+ {===>} pcs_lastIt_3=2;
+ {===>} pcs_hot_3=100.0;
+ {===>} pcs_cool1_3=100.0;
+ {===>} pcs_cool2_3=100.0;
+ {===>} pcs_cool3_3=100.0;
+-{===>} pcs_r_3=1000;
+-{===>} pcs_d_3=10000;
++{===>} pcs_r_3=1491.01656;
++{===>} pcs_d_3=7282.39968;
+ 
+ {+ choice: "NO" "XPCS" +}
+ {===>} pcs_choice_4="NO";
+@@ -4642,7 +4642,7 @@
+ {======================= analysis and clustering ==========================}
+ {* Full or limited analysis of results? *}
+ {+ choice: "full" "cluster" "none" +}
+-{===>} runana="cluster";
++{===>} runana="full";
+ 
+ {* Cutoff distance (proton-acceptor) to define an hydrogen bond? *}
+ {===>} dist_hb=2.5;

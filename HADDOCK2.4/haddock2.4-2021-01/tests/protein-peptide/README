@@ -1,0 +1,34 @@
+============================================================================
+This directory contains a number of supplementary files associated with the
+Methods in Molecular Biology chapter on 
+"Information-driven modelling of protein-peptide complexes" by Trellet et al.
+============================================================================
+
+
+1NX1_protein.pdb		: protein receptor PDB file
+DAIDALSSDFT_3conformations.pdb	: PDB file containing an ensemble of three peptide conformations for docking
+build_seq.py			: Pymol script to build the peptide sequence
+3c_build_seq.py			: Pymol script to build the peptide in various conformations
+haddockparam.web		: HADDOCK web server parameter file containing all data and parameters to run the protein-peptide example
+
+
+Examples run files are:
+run_ref_for_patch.cns: protein-peptide docking with AIRs, automatic flexible interface definition, fully flexible peptide
+
+# FOR RUNNING THE EXAMPLE 
+#
+# first source the haddock_configure.csh scripts for your version of HADDOCK
+
+source ./run-example.csh >&haddock-protein-peptide.out&
+
+
+# UPDATING THE PATCH FILE - FOR HADDOCK DEVELOPERS
+
+# To create the patch (need to be done only when the default run.cns change too much
+# and this is detected when the patch doesn't work anymore, you should:
+# 1. Create a normal run1 dir.
+# 2. Copy run1/run.cns to run_ref_for_patch.cns
+# 3. Edit run_ref_for_patch.cns for the needs of the docking
+# 4. Create the patch file:
+cd run1
+diff -Nur run.cns ../run_ref_for_patch.cns > ../run.cns.patch

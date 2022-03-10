@@ -1,29 +1,32 @@
 # FROM ubuntu:16.04
 FROM phusion/baseimage:0.9.16
+# FROM mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu16.04
 
-MAINTAINER Colby T. Ford <colby.ford@uncc.edu>
+ENV DEBIAN_FRONTEND noninteractive
+USER root
+
+## Set an working directory for the MMAE ML resources
+WORKDIR /software
 
 ## global env
-ENV HOME=/home TERM=xterm
+# ENV HOME=/home TERM=xterm
 
 ## set proper timezone
-RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
+# RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 ## Install essential for building
     # software-properties-common \
-RUN DEBIAN_FRONTEND=noninteractive
-RUN \
-  apt-get update && \
-  apt-get dist-upgrade -y && \
-  apt-get -y autoremove && \
-  apt-get install -y \
-    build-essential \
-    git \
-    cmake \
-    wget \
-    python-pip \
-    python2.7 \
-    python2.7-dev
+RUN apt-get update && \
+    apt-get install -y \
+        build-essential \
+        git \
+        cmake \
+        wget \
+        flex \
+        gfortran \
+        python-pip \
+        python2.7 \
+        python2.7-dev
 
 ## Change bash Shell to tcsh
 RUN sudo apt-get install tcsh && \
@@ -32,27 +35,49 @@ RUN sudo apt-get install tcsh && \
 SHELL ["/bin/tcsh", "-c"]
 
 ## Make software directory
-RUN mkdir software
+# RUN mkdir software
 
 ## Install CNSsolve (http://cns-online.org/v1.3/)
 COPY cns_solve_1.3_all_intel-mac_linux.tar.gz /software
-RUN cd software && \
+RUN cd /software && \
     gunzip cns_solve_1.3_all_intel-mac_linux.tar.gz && \
     tar xvf cns_solve_1.3_all_intel-mac_linux.tar && \
     rm cns_solve_1.3/cns_solve_env
 COPY cns_solve_env /software/cns_solve_1.3
-RUN cd software/cns_solve_1.3 && \
-    source cns_solve_env
+RUN cd /software/cns_solve_1.3 && \
+    make install
 
+## Install FreeSASA
+# RUN cd software && \
+#     wget https://freesasa.github.io/freesasa-2.0.3.tar.gz && \
+#     tar xvfz freesasa-2.0.3.tar.gz && \
+#     cd freesasa-2.0.3 && \
+#     ./configure --disable-json --disable-xml --prefix ~/software && \
+#     make && \
+#     make install
 
 ## Install HADDOCK (https://www.bonvinlab.org/software/haddock2.4/installation/)
 COPY haddock2.4-2021-01.tgz /software
-RUN cd software && \
+RUN cd /software && \
     tar xvfz haddock2.4-2021-01.tgz
 
 ## Configure HADDOCK
 COPY local_config_file /software/haddock2.4-2021-01
 RUN cd /software/haddock2.4-2021-01 && \
     ./install.csh local_config_file 
-    #&& \
-    #source haddock_configure.csh
+    # && \
+    # source haddock_configure.csh
+
+
+    # export PFX=$HOME/haddock
+    # export CNS=$PFX/cns_solve
+    # mkdir -p $CNS
+    # tar -C $CNS --strip-components=1 -xf cns_solve_1.3_all_intel-mac_linux.tar.gz
+    # tar -C $PFX -xf haddock2.4-2022-01.tgz
+    # pushd $CNS
+    # sed -i.BACK -e "s|_CNSsolve_location_|$CNS|g" cns_solve_env
+    # cp -a $PFX/haddock2.4-2022-01/cns1.3/* source
+    # make install 2>&1|tee make-install.out
+    # popd
+
+

@@ -1,0 +1,9 @@
+AMBIG_TBL=./ambig_whiscy.tbl
+HADDOCK_DIR=../../
+N_COMP=2
+PDB_FILE1=./1a2p_B.pdb
+PDB_FILE2=./1a19_A.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+RUN_NUMBER=1

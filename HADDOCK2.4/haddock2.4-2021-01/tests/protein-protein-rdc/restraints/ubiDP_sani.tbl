@@ -1,0 +1,644 @@
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    2 and name N and segid A )
+     ( resid    2 and name HN and segid A )   0.727   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    3 and name N and segid A )
+     ( resid    3 and name HN and segid A )  11.702   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    4 and name N and segid A )
+     ( resid    4 and name HN and segid A )  10.155   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    5 and name N and segid A )
+     ( resid    5 and name HN and segid A )   7.929   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    6 and name N and segid A )
+     ( resid    6 and name HN and segid A )  12.914   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   13 and name N and segid A )
+     ( resid   13 and name HN and segid A )   8.210   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   14 and name N and segid A )
+     ( resid   14 and name HN and segid A )  12.987   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   15 and name N and segid A )
+     ( resid   15 and name HN and segid A )  12.012   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   17 and name N and segid A )
+     ( resid   17 and name HN and segid A )   9.260   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   18 and name N and segid A )
+     ( resid   18 and name HN and segid A )  -1.356   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   20 and name N and segid A )
+     ( resid   20 and name HN and segid A ) -10.402   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   21 and name N and segid A )
+     ( resid   21 and name HN and segid A )  11.107   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   22 and name N and segid A )
+     ( resid   22 and name HN and segid A )   6.383   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   28 and name N and segid A )
+     ( resid   28 and name HN and segid A )   3.498   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   29 and name N and segid A )
+     ( resid   29 and name HN and segid A )   9.908   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   30 and name N and segid A )
+     ( resid   30 and name HN and segid A )  12.052   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   31 and name N and segid A )
+     ( resid   31 and name HN and segid A )   8.846   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   32 and name N and segid A )
+     ( resid   32 and name HN and segid A )   4.574   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   33 and name N and segid A )
+     ( resid   33 and name HN and segid A )   9.774   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   34 and name N and segid A )
+     ( resid   34 and name HN and segid A )  12.364   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   35 and name N and segid A )
+     ( resid   35 and name HN and segid A ) -19.988   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   36 and name N and segid A )
+     ( resid   36 and name HN and segid A )  -6.707   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   39 and name N and segid A )
+     ( resid   39 and name HN and segid A )  12.508   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   40 and name N and segid A )
+     ( resid   40 and name HN and segid A )  -6.821   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   41 and name N and segid A )
+     ( resid   41 and name HN and segid A )   3.728   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   43 and name N and segid A )
+     ( resid   43 and name HN and segid A )   9.610   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   47 and name N and segid A )
+     ( resid   47 and name HN and segid A )  11.264   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   49 and name N and segid A )
+     ( resid   49 and name HN and segid A )  -1.802   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   51 and name N and segid A )
+     ( resid   51 and name HN and segid A )   0.307   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   52 and name N and segid A )
+     ( resid   52 and name HN and segid A ) -20.752   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   54 and name N and segid A )
+     ( resid   54 and name HN and segid A )  -9.635   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   55 and name N and segid A )
+     ( resid   55 and name HN and segid A )   9.748   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   56 and name N and segid A )
+     ( resid   56 and name HN and segid A )   5.366   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   57 and name N and segid A )
+     ( resid   57 and name HN and segid A )   5.294   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   58 and name N and segid A )
+     ( resid   58 and name HN and segid A )  13.264   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   59 and name N and segid A )
+     ( resid   59 and name HN and segid A )   8.014   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   60 and name N and segid A )
+     ( resid   60 and name HN and segid A )  -3.847   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   61 and name N and segid A )
+     ( resid   61 and name HN and segid A )  11.203   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   62 and name N and segid A )
+     ( resid   62 and name HN and segid A )  -7.472   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   63 and name N and segid A )
+     ( resid   63 and name HN and segid A ) -12.913   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   64 and name N and segid A )
+     ( resid   64 and name HN and segid A )  11.483   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   65 and name N and segid A )
+     ( resid   65 and name HN and segid A )  -4.057   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   66 and name N and segid A )
+     ( resid   66 and name HN and segid A )  12.824   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   67 and name N and segid A )
+     ( resid   67 and name HN and segid A )   6.746   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   68 and name N and segid A )
+     ( resid   68 and name HN and segid A )   6.583   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   69 and name N and segid A )
+     ( resid   69 and name HN and segid A )  10.311   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    2 and name N and segid B )
+     ( resid    2 and name HN and segid B )   5.640   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    5 and name N and segid B )
+     ( resid    5 and name HN and segid B )   3.904   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid    6 and name N and segid B )
+     ( resid    6 and name HN and segid B )  11.275   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   12 and name N and segid B )
+     ( resid   12 and name HN and segid B )  14.274   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   13 and name N and segid B )
+     ( resid   13 and name HN and segid B )   5.174   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   14 and name N and segid B )
+     ( resid   14 and name HN and segid B )   8.463   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   15 and name N and segid B )
+     ( resid   15 and name HN and segid B )   2.791   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   17 and name N and segid B )
+     ( resid   17 and name HN and segid B )  10.205   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   18 and name N and segid B )
+     ( resid   18 and name HN and segid B )   4.771   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   20 and name N and segid B )
+     ( resid   20 and name HN and segid B ) -11.829   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   21 and name N and segid B )
+     ( resid   21 and name HN and segid B )  15.794   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   22 and name N and segid B )
+     ( resid   22 and name HN and segid B )   2.719   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   28 and name N and segid B )
+     ( resid   28 and name HN and segid B )   9.270   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   29 and name N and segid B )
+     ( resid   29 and name HN and segid B )   8.652   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   30 and name N and segid B )
+     ( resid   30 and name HN and segid B )  12.272   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   31 and name N and segid B )
+     ( resid   31 and name HN and segid B )  12.220   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   32 and name N and segid B )
+     ( resid   32 and name HN and segid B )   8.415   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   33 and name N and segid B )
+     ( resid   33 and name HN and segid B )   8.079   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   34 and name N and segid B )
+     ( resid   34 and name HN and segid B )   7.674   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   35 and name N and segid B )
+     ( resid   35 and name HN and segid B ) -17.387   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   36 and name N and segid B )
+     ( resid   36 and name HN and segid B )  -1.110   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   39 and name N and segid B )
+     ( resid   39 and name HN and segid B )   0.797   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   40 and name N and segid B )
+     ( resid   40 and name HN and segid B ) -13.531   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   42 and name N and segid B )
+     ( resid   42 and name HN and segid B )  12.607   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   44 and name N and segid B )
+     ( resid   44 and name HN and segid B )  16.203   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   45 and name N and segid B )
+     ( resid   45 and name HN and segid B )   9.450   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   46 and name N and segid B )
+     ( resid   46 and name HN and segid B )  12.027   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   47 and name N and segid B )
+     ( resid   47 and name HN and segid B )   9.404   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   50 and name N and segid B )
+     ( resid   50 and name HN and segid B )  15.322   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   51 and name N and segid B )
+     ( resid   51 and name HN and segid B )   6.845   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   52 and name N and segid B )
+     ( resid   52 and name HN and segid B ) -15.797   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   54 and name N and segid B )
+     ( resid   54 and name HN and segid B )  -6.170   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   55 and name N and segid B )
+     ( resid   55 and name HN and segid B )   9.011   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   56 and name N and segid B )
+     ( resid   56 and name HN and segid B )  -7.716   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   57 and name N and segid B )
+     ( resid   57 and name HN and segid B )  -6.822   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   58 and name N and segid B )
+     ( resid   58 and name HN and segid B )   3.798   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   59 and name N and segid B )
+     ( resid   59 and name HN and segid B )  -3.329   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   60 and name N and segid B )
+     ( resid   60 and name HN and segid B )   0.501   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   61 and name N and segid B )
+     ( resid   61 and name HN and segid B )  12.618   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   62 and name N and segid B )
+     ( resid   62 and name HN and segid B ) -12.840   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   63 and name N and segid B )
+     ( resid   63 and name HN and segid B )  -7.111   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   64 and name N and segid B )
+     ( resid   64 and name HN and segid B )   1.042   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   65 and name N and segid B )
+     ( resid   65 and name HN and segid B )  -4.500   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   66 and name N and segid B )
+     ( resid   66 and name HN and segid B )   1.910   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   67 and name N and segid B )
+     ( resid   67 and name HN and segid B )   0.361   0.200
+!
+assi ( resid 999 and name OO )
+     ( resid 999 and name Z  )
+     ( resid 999 and name X  )
+     ( resid 999 and name Y  )
+     ( resid   69 and name N and segid B )
+     ( resid   69 and name HN and segid B )  17.568   0.200

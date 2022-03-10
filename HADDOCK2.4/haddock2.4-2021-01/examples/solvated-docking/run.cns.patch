@@ -1,0 +1,20 @@
+--- run.cns	2019-03-12 11:27:19.793053173 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 11:27:12.076703909 +0100
+@@ -4480,7 +4480,7 @@
+ {======================= Solvated rigid body docking=======================}
+ {* perform solvated docking ? *}
+ {+ choice: true false +}
+-{===>} waterdock=false;
++{===>} waterdock=true;
+ 
+ {* which method to use for solvating? *}
+ {* db: database-based (recommended), restraints: for restrained solvating to amino-acid most often forming
+@@ -4565,7 +4565,7 @@
+ 
+ {* write additional PDB files including solvent ?           *}
+ {+ choice: true false +}
+-{===>} keepwater=false;
++{===>} keepwater=true;
+ 
+ 
+ {================================ Scoring =================================}

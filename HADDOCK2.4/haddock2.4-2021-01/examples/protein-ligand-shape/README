@@ -1,0 +1,30 @@
+# FOR HADDOCK USERS
+
+# Examples run files are:
+
+# run.cns-refe: template-based protein-ligand docking with shape restraint 
+
+# Once your haddock run dir is created (for example run1), you will need to edit run1/run.cns.
+# This can be done by copying run_ref_for_patch.cns to run1/run.cns 
+# and correcting the absolute path used
+# This can also be done with a patch that will only modify the necessary lines of run1/run.cns 
+# To apply the patch:
+
+cd run1
+patch -p0 -i ../run.cns.patch
+
+# Also required: copy the ligand parameter and topology files into the run1/toppar directory
+
+cp ligand-par/* run1/toppar/
+
+# FOR HADDOCK DEVELOPERS
+
+# To create the patch (need to be done only when the default run.cns change too much
+# and this is detected when the patch doesn't work anymore, you should:
+# 1. Create a normal run1 dir.
+# 2. Copy run1/run.cns to run_ref_for_patch.cns
+# 3. Edit run_ref_for_patch.cns for the needs of the docking
+# 4. Create the patch file:
+diff -Nur run.cns ../run_ref_for_patch.cns > ../run.cns.patch
+
+

@@ -1,0 +1,84 @@
+!
+!residues completely missing in Cys738 PRE data, so assign 2 to 12.5 A
+!
+assign (segid A and resid 35 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 50 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 51 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 54 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+!
+!residues with measurable distances in Cys738 PRE data, so assign distance +/- 3A
+!
+assign (segid A and resid 33 and name HN) ((segid B or segid C) and resid 738 and name HG) 13.4 3.0 3.0
+assign (segid A and resid 55 and name HN) ((segid B or segid C) and resid 738 and name HG) 15.1 3.0 3.0
+assign (segid A and resid 59 and name HN) ((segid B or segid C) and resid 738 and name HG) 14.9 3.0 3.0
+!
+!residues completely missing in Cys740 PRE data, so assign 2 to 12.5 A
+!
+assign (segid A and resid 33 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 53 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 54 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 59 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+!
+!residues with measurable distances in Cys740 PRE data, so assign distance +/- 3A
+!
+assign (segid A and resid 30 and name HN) ((segid B or segid C) and resid 740 and name HG) 15.5 3.0 3.0
+assign (segid A and resid 51 and name HN) ((segid B or segid C) and resid 740 and name HG) 14.4 3.0 3.0
+assign (segid A and resid 55 and name HN) ((segid B or segid C) and resid 740 and name HG) 16.2 3.0 3.0
+assign (segid A and resid 56 and name HN) ((segid B or segid C) and resid 740 and name HG) 16.5 3.0 3.0
+!
+!residues completely missing in Cys738 PRE data, so assign 2 to 12.5 A
+!
+assign (segid A and resid 42 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 43 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 45 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 46 and name HN) ((segid B or segid C) and resid 738 and name HG) 10.0 8.0 2.5
+!
+!residues with measurable distances in Cys738 PRE data, so assign distance +/- 3A
+!
+assign (segid A and resid 38 and name HN) ((segid B or segid C) and resid 738 and name HG) 15.5 3.0 3.0
+assign (segid A and resid 41 and name HN) ((segid B or segid C) and resid 738 and name HG) 13.7 3.0 3.0
+assign (segid A and resid 44 and name HN) ((segid B or segid C) and resid 738 and name HG) 13.3 3.0 3.0
+assign (segid A and resid 47 and name HN) ((segid B or segid C) and resid 738 and name HG) 13.1 3.0 3.0
+assign (segid A and resid 49 and name HN) ((segid B or segid C) and resid 738 and name HG) 15.1 3.0 3.0
+assign (segid A and resid 74 and name HN) ((segid B or segid C) and resid 738 and name HG) 14.3 3.0 3.0
+assign (segid A and resid 78 and name HN) ((segid B or segid C) and resid 738 and name HG) 13.9 3.0 3.0
+!
+!residues completely missing in Cys740 PRE data, so assign 2 to 12.5 A
+!
+assign (segid A and resid 21 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 40 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 43 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 45 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 46 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 74 and name HN) ((segid B or segid C) and resid 740 and name HG) 10.0 8.0 2.5
+!
+!residues with measurable distances in Cys740 PRE data, so assign distance +/- 3A
+!
+assign (segid A and resid 41 and name HN) ((segid B or segid C) and resid 740 and name HG) 14.7 3.0 3.0
+assign (segid A and resid 42 and name HN) ((segid B or segid C) and resid 740 and name HG) 13.7 3.0 3.0
+assign (segid A and resid 44 and name HN) ((segid B or segid C) and resid 740 and name HG) 13.1 3.0 3.0
+assign (segid A and resid 47 and name HN) ((segid B or segid C) and resid 740 and name HG) 13.8 3.0 3.0
+assign (segid A and resid 48 and name HN) ((segid B or segid C) and resid 740 and name HG) 15.5 3.0 3.0
+assign (segid A and resid 49 and name HN) ((segid B or segid C) and resid 740 and name HG) 14.4 3.0 3.0
+assign (segid A and resid 75 and name HN) ((segid B or segid C) and resid 740 and name HG) 14.8 3.0 3.0
+assign (segid A and resid 76 and name HN) ((segid B or segid C) and resid 740 and name HG) 15.1 3.0 3.0
+!
+!residues completely missing in Cys727 PRE data, so assign 2 to 12.5 A
+!
+assign (segid A and resid 30 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 32 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 33 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 34 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 35 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 53 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+assign (segid A and resid 54 and name HN) ((segid B or segid C) and resid 727 and name HG) 10.0 8.0 2.5
+!
+!residues with measurable distances in Cys727 PRE data, so assign distance +/- 4A
+!
+assign (segid A and resid 26 and name HN) ((segid B or segid C) and resid 727 and name HG) 14.9 4.0 4.0
+assign (segid A and resid 28 and name HN) ((segid B or segid C) and resid 727 and name HG) 12.1 4.0 4.0
+assign (segid A and resid 31 and name HN) ((segid B or segid C) and resid 727 and name HG) 14.2 4.0 4.0
+assign (segid A and resid 52 and name HN) ((segid B or segid C) and resid 727 and name HG) 16.6 4.0 4.0
+assign (segid A and resid 56 and name HN) ((segid B or segid C) and resid 727 and name HG) 14.0 4.0 4.0
+assign (segid A and resid 57 and name HN) ((segid B or segid C) and resid 727 and name HG) 14.8 4.0 4.0
+assign (segid A and resid 59 and name HN) ((segid B or segid C) and resid 727 and name HG) 15.3 4.0 4.0

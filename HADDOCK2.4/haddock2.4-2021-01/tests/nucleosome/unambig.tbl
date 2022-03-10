@@ -1,0 +1,1 @@
+assign (segid A and (resid 147 or resid 148) and name P* ) (segid B and (resid 1 or resid 291) and name P* ) 50 40 0

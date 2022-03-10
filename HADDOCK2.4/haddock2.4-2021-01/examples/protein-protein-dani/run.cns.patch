@@ -1,0 +1,20 @@
+--- ./run.cns	2019-03-12 11:28:53.832122790 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 11:28:48.513571299 +0100
+@@ -3433,7 +3433,7 @@
+           cols=12 "type" "firstIt" "lastIt" "Kdani(hot)" "Kdani(cool1)" "Kdani(cool2)" "Kdani(cool3)" "Correlation time" "D" "R" "H frequency" "N frequency" +}
+ 
+ {* Number of DANI restraint sets *}
+-{===>} numdani=0;
++{===>} numdani=1;
+ 
+ {+ choice: "NO" "DANI" +}
+ {===>} dan_choice_1="DANI";
+@@ -4642,7 +4642,7 @@
+ {======================= analysis and clustering ==========================}
+ {* Full or limited analysis of results? *}
+ {+ choice: "full" "cluster" "none" +}
+-{===>} runana="cluster";
++{===>} runana="full";
+ 
+ {* Cutoff distance (proton-acceptor) to define an hydrogen bond? *}
+ {===>} dist_hb=2.5;

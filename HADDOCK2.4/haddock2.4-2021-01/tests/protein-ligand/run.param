@@ -1,0 +1,10 @@
+AMBIG_TBL=./ambig-active-it0.tbl
+HADDOCK_DIR=../../
+N_COMP=2
+PDB_FILE1=./neuraminidase-2BAT.pdb
+PDB_FILE2=./oseltamivir_zwitterion.pdb
+PROJECT_DIR=./
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+RUN_NUMBER=1
+UNAMBIG_TBL=./ambig-passive-it1.tbl

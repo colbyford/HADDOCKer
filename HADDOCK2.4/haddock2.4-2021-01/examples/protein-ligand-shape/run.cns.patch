@@ -1,0 +1,172 @@
+--- run.cns	2019-05-24 21:25:11.279575593 +0200
++++ ../run_ref_for_patch.cns	2019-05-24 21:21:31.970875142 +0200
+@@ -89,7 +89,7 @@
+ {===>} prot_root_mol1="3DV1-fit-prot";
+ {* Fix Molecule at Origin during it0 *}
+ {+ choice: true false +}
+-{===>} fix_origin_mol1=false;
++{===>} fix_origin_mol1=true;
+ {* Is molecule 1 DNA? *}
+ {+ choice: true false +}
+ {===>} dna_mol1=false;
+@@ -110,7 +110,7 @@
+ {* segid file of molecule 2 *}
+ {===>} prot_segid_mol2="B";
+ {* fileroot of molecule 2 *}
+-{===>} prot_root_mol2="ligand1_210";
++{===>} prot_root_mol2="ligand1";
+ {* Fix Molecule at Origin during it0 *}
+ {+ choice: true false +}
+ {===>} fix_origin_mol2=false;
+@@ -137,7 +137,7 @@
+ {===>} prot_root_mol3="shape";
+ {* Fix Molecule at Origin during it0 *}
+ {+ choice: true false +}
+-{===>} fix_origin_mol3=false;
++{===>} fix_origin_mol3=true;
+ {* Is molecule 3 DNA? *}
+ {+ choice: true false +}
+ {===>} dna_mol3=false;
+@@ -146,7 +146,7 @@
+ {===>} cyclicpept_mol3=false;
+ {* Is molecule 3 a shape? *}
+ {+ choice: true false +}
+-{===>} shape_mol3=false;
++{===>} shape_mol3=true;
+ {* Coarse grained molecule? *}
+ {+ choice: true false +}
+ {===>} cg_mol3=false;
+@@ -554,7 +554,7 @@
+ 
+ {* Remove non-polar hydrogens? *}
+ {+ choice: true false +}
+-{===>} delenph=true;
++{===>} delenph=false;
+ 
+ {* HADDOCK directory *}
+ {*  the absolute path of the HADDOCK program files *}
+@@ -573,9 +573,9 @@
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISD for molecule 1 *}
+-{===>} numhisd_1=0;
++{===>} numhisd_1=1;
+ 
+-{===>} hisd_1_1=0;
++{===>} hisd_1_1=360;
+ {===>} hisd_1_2=0;
+ {===>} hisd_1_3=0;
+ {===>} hisd_1_4=0;
+@@ -1156,14 +1156,14 @@
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISE for molecule 1 *}
+-{===>} numhise_1=0;
++{===>} numhise_1=6;
+ 
+-{===>} hise_1_1=0;
+-{===>} hise_1_2=0;
+-{===>} hise_1_3=0;
+-{===>} hise_1_4=0;
+-{===>} hise_1_5=0;
+-{===>} hise_1_6=0;
++{===>} hise_1_1=49;
++{===>} hise_1_2=362;
++{===>} hise_1_3=45;
++{===>} hise_1_4=145;
++{===>} hise_1_5=181;
++{===>} hise_1_6=89;
+ {===>} hise_1_7=0;
+ {===>} hise_1_8=0;
+ {===>} hise_1_9=0;
+@@ -1800,7 +1800,7 @@
+ {* number of semi-flexible segments for molecule 3 (-1 for automated mode) *}
+ {* Note that current max is 10 (edit the run.cns to add more segments    *}
+ 
+-{===>} nseg_3=-1;
++{===>} nseg_3=0;
+ 
+ {* Residues of molecule 3 at interface *}
+ {+ table: rows=10 "segment 1" "segment 2" "segment 3" "segment 4" "segment 5" "segment 6" "segment 7" "segment 8" "segment 9" "segment 10" cols=2 "Start residue" "End residue" +}
+@@ -3047,7 +3047,7 @@
+ 
+ {* Do you want to randomly exclude a fraction of the ambiguous restraints (AIRs)? *}
+ {+ choice: true false +}
+-{===>} noecv=true;
++{===>} noecv=false;
+ 
+ {* Number of partitions for random exclusion (%excluded=100/number of partitions)? *}
+ {===>} ncvpart=2;
+@@ -3673,7 +3673,7 @@
+ {* topology file for molecule 2 *}
+ {===>} prot_top_mol2="protein-allhdg5-4.top";
+ {* topology file for molecule 3 *}
+-{===>} prot_top_mol3="protein-allhdg5-4.top";
++{===>} prot_top_mol3="shape.top";
+ {* topology file for molecule 4 *}
+ {===>} prot_top_mol4="protein-allhdg5-4.top";
+ {* topology file for molecule 5 *}
+@@ -3755,7 +3755,7 @@
+ {* energy parameter file for molecule 2 *}
+ {===>} prot_par_mol2="protein-allhdg5-4.param";
+ {* energy parameter file for molecule 3 *}
+-{===>} prot_par_mol3="protein-allhdg5-4.param";
++{===>} prot_par_mol3="shape.param";
+ {* energy parameter file for molecule 4 *}
+ {===>} prot_par_mol4="protein-allhdg5-4.param";
+ {* energy parameter file for molecule 5 *}
+@@ -3940,21 +3940,21 @@
+ 
+ {* Use constant (cdie) or distance-dependent (rdie) dielectric in it0? *}
+ {+ choice: cdie rdie +}
+-{===>} dielec_0=rdie;
++{===>} dielec_0=cdie;
+ 
+ {* Include electrostatic during semi-flexible SA (it1)? *}
+ {+ choice: true false +}
+ {===>} elecflag_1=true;
+ 
+ {* Give the epsilon constant for the electrostatic energy term in it1 *}
+-{===>} epsilon_1=1.0;
++{===>} epsilon_1=10.0;
+ 
+ {* Use constant (cdie) or distance-dependent (rdie) dielectric in it0? *}
+ {+ choice: cdie rdie +}
+-{===>} dielec_1=rdie;
++{===>} dielec_1=cdie;
+ 
+ {* Scaling of intermolecular interactions for rigid body EM*}
+-{===>} inter_rigid=1.0;
++{===>} inter_rigid=0.001;
+ 
+ {* Scaling of intermolecular interactions for semi-flexible SA*}
+ {+ table: rows=3 "Rigid body dynamic " "SA with flexible side-chains (cool2)" "SA with flexible backbone and side-chains (cool3)"
+@@ -4574,13 +4574,13 @@
+ {* Define the weights for the various terms for the sorting of structures (scoring) *}
+ {+ table: rows=15 "Evdw" "Eelec" "Eair" "Erg" "Esani" "Exrdc" "Expcs" "Edani" "Evean" "Ecdih" "Esym" "Ezres" "BSA" "dEint" "Edesolv"
+           cols=3 "Rigid body EM" "semi-flexible SA" "Water refinement" +}
+-{===>} w_vdw_0=0.01;
++{===>} w_vdw_0=0.0;
+ {===>} w_vdw_1=1.0;
+ {===>} w_vdw_2=1.0;
+ 
+ {===>} w_elec_0=1.0;
+ {===>} w_elec_1=1.0;
+-{===>} w_elec_2=0.2;
++{===>} w_elec_2=0.1;
+ 
+ {===>} w_dist_0=0.01;
+ {===>} w_dist_1=0.1;
+@@ -4652,10 +4652,10 @@
+ 
+ {* Clustering method (RMSD or Fraction of Common Contacts (FCC)) *}
+ {+ choice: "RMSD" "FCC" +}
+-{===>} clust_meth="FCC";
++{===>} clust_meth="RMSD";
+ 
+ {* RMSD cutoff for clustering? (Recommended values: RMSD 7.5, FCC 0.60) *}
+-{===>} clust_cutoff=0.60;
++{===>} clust_cutoff=1.5;
+ 
+ {* Minimum cluster size? *}
+ {===>} clust_size=4;

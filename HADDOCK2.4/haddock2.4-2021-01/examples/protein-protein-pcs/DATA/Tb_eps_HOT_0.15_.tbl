@@ -1,0 +1,1032 @@
+!BEST 0tol-fit  Tb:  27.454           5.621
+!GENERATED WITH Tb:  27.415           5.981          14.263          58.980           4.787     41.344     58.759    155.117
+!assign ( resid 997  and name OO )
+!       ( resid 997  and name Z )
+!       ( resid 997  and name X )
+!       ( resid 997  and name Y )
+!       ( resid   6  and name  N and segid A )   0.09495  0.00000
+!assign ( resid 997  and name OO )
+!       ( resid 997  and name Z )
+!       ( resid 997  and name X )
+!       ( resid 997  and name Y )
+!       ( resid   6  and name  C and segid A )   0.08709  0.00000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 7 and name N and segid A ) 0.110414 0.150000000000
+!assign ( resid 997  and name OO )
+!       ( resid 997  and name Z )
+!       ( resid 997  and name X )
+!       ( resid 997  and name Y )
+!       ( resid   7  and name  HN and segid A )   -0.03288  0.00000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 7 and name C and segid A ) 0.1602 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 8 and name N and segid A ) 0.105186 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 8 and name HN and segid A ) 0.348068 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 8 and name C and segid A ) 0.186889 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 9 and name N and segid A ) 0.204557 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 9 and name HN and segid A ) 0.0432132 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 20 and name C and segid A ) -0.531679 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 21 and name N and segid A ) -0.449185 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 21 and name HN and segid A ) -0.237809 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 21 and name C and segid A ) -0.310817 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 22 and name N and segid A ) -0.331161 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 22 and name HN and segid A ) -0.483898 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 22 and name C and segid A ) -0.270337 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 23 and name N and segid A ) -0.386426 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 23 and name HN and segid A ) -0.0919853 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 23 and name C and segid A ) -0.35745 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 24 and name N and segid A ) -0.553493 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 24 and name HN and segid A ) -0.648677 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 25 and name C and segid A ) 0.645404 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 26 and name N and segid A ) 0.337461 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 26 and name HN and segid A ) 0.123402 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 26 and name C and segid A ) 0.556291 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 27 and name N and segid A ) 0.910828 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 27 and name HN and segid A ) 0.809573 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 27 and name C and segid A ) 1.28832 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 28 and name N and segid A ) 1.62064 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 28 and name HN and segid A ) 1.16318 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 36 and name C and segid A ) -0.247934 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 37 and name N and segid A ) -0.404834 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 37 and name HN and segid A ) -0.550637 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 37 and name C and segid A ) 0.114361 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 38 and name N and segid A ) 0.215195 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 38 and name HN and segid A ) 0.184191 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 38 and name C and segid A ) 0.349092 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 39 and name N and segid A ) 0.256473 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 39 and name HN and segid A ) 0.274197 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 39 and name C and segid A ) 0.410651 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 40 and name N and segid A ) 0.274183 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 40 and name HN and segid A ) 0.288626 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 40 and name C and segid A ) 0.586524 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 41 and name N and segid A ) 0.746251 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 41 and name HN and segid A ) 0.500084 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 41 and name C and segid A ) 0.919391 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 42 and name N and segid A ) 0.63977 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 42 and name HN and segid A ) 0.623794 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 42 and name C and segid A ) 0.46354 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 43 and name N and segid A ) 0.584093 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 43 and name HN and segid A ) 0.863663 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 43 and name C and segid A ) 0.338499 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 44 and name N and segid A ) 0.079701 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 44 and name HN and segid A ) 0.0443604 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 44 and name C and segid A ) -0.0816601 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 45 and name N and segid A ) -0.315159 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 45 and name HN and segid A ) -0.168219 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 45 and name C and segid A ) -0.651683 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 46 and name N and segid A ) -0.702491 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 46 and name HN and segid A ) -0.491692 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 46 and name C and segid A ) -0.896042 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 47 and name N and segid A ) -1.34147 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 47 and name HN and segid A ) -1.21997 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 56 and name C and segid A ) 2.32662 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 57 and name N and segid A ) 2.21725 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 57 and name HN and segid A ) 1.89079 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 72 and name C and segid A ) 1.50352 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 73 and name N and segid A ) 1.97712 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 73 and name HN and segid A ) 2.20663 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 73 and name C and segid A ) 1.64287 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 74 and name N and segid A ) 1.40195 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 74 and name HN and segid A ) 1.51904 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 74 and name C and segid A ) 0.923664 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 75 and name N and segid A ) 0.665989 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 75 and name HN and segid A ) 0.968 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 75 and name C and segid A ) 0.570833 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 76 and name N and segid A ) 0.603192 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 76 and name HN and segid A ) 0.821674 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 77 and name C and segid A ) 0.702137 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 78 and name N and segid A ) 0.696971 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 78 and name HN and segid A ) 0.512076 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 80 and name C and segid A ) -0.025574 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 81 and name N and segid A ) 0.141483 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 81 and name HN and segid A ) 0.142416 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 82 and name C and segid A ) -0.491741 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 83 and name N and segid A ) -0.2285 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 83 and name HN and segid A ) -0.279938 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 85 and name C and segid A ) -0.874508 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 86 and name N and segid A ) -0.93408 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 86 and name HN and segid A ) -0.860207 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 86 and name C and segid A ) -0.987336 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 87 and name N and segid A ) -0.800139 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 87 and name HN and segid A ) -0.626614 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 87 and name C and segid A ) -0.647938 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 88 and name N and segid A ) -0.763212 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 88 and name HN and segid A ) -0.532499 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 88 and name C and segid A ) -0.783968 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 89 and name N and segid A ) -0.902822 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 89 and name HN and segid A ) -0.872751 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 89 and name C and segid A ) -0.834629 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 90 and name N and segid A ) -0.847226 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 90 and name HN and segid A ) -0.862659 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 90 and name C and segid A ) -0.693338 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 91 and name N and segid A ) -0.589485 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 91 and name HN and segid A ) -0.555699 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 91 and name C and segid A ) -0.417825 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 92 and name N and segid A ) -0.430494 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 92 and name HN and segid A ) -0.45028 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 92 and name C and segid A ) -0.369439 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 93 and name N and segid A ) -0.342449 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 93 and name HN and segid A ) -0.577775 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 93 and name C and segid A ) -0.373485 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 94 and name N and segid A ) -0.155612 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 94 and name HN and segid A ) -0.126979 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 94 and name C and segid A ) -0.177381 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 95 and name N and segid A ) -0.19199 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 95 and name HN and segid A ) -0.190459 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 107 and name C and segid A ) -0.53188 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 108 and name N and segid A ) -0.751948 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 108 and name HN and segid A ) -0.687338 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 109 and name C and segid A ) 0.156369 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 110 and name N and segid A ) 0.0268584 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 110 and name HN and segid A ) 0.134406 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 110 and name C and segid A ) 0.148984 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 111 and name N and segid A ) -0.167801 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 111 and name HN and segid A ) -0.275568 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 111 and name C and segid A ) -0.208838 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 112 and name N and segid A ) 0.0490587 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 112 and name HN and segid A ) -0.0984709 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 112 and name C and segid A ) 0.13886 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 113 and name N and segid A ) 0.0556763 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 113 and name HN and segid A ) 0.15462 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 113 and name C and segid A ) 0.129323 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 114 and name N and segid A ) 0.226593 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 114 and name HN and segid A ) 0.106027 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 114 and name C and segid A ) -0.052019 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 115 and name N and segid A ) -0.0472797 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 115 and name HN and segid A ) -0.0672893 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 115 and name C and segid A ) 0.0381141 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 116 and name N and segid A ) 0.0205065 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 116 and name HN and segid A ) 0.0543606 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 116 and name C and segid A ) -0.0293323 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 117 and name N and segid A ) -0.0329114 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 117 and name HN and segid A ) -0.0829759 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 117 and name C and segid A ) -0.12482 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 118 and name N and segid A ) -0.269037 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 118 and name HN and segid A ) -0.176701 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 121 and name C and segid A ) -0.605892 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 122 and name N and segid A ) -0.701702 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 122 and name HN and segid A ) -0.716791 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 123 and name C and segid A ) -0.361539 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 124 and name N and segid A ) -0.361609 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 124 and name HN and segid A ) -0.395115 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 124 and name C and segid A ) -0.244861 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 125 and name N and segid A ) -0.45082 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 125 and name HN and segid A ) -0.548934 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 125 and name C and segid A ) -0.338462 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 126 and name N and segid A ) -0.228024 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 126 and name HN and segid A ) -0.252403 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 126 and name C and segid A ) -0.202431 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 127 and name N and segid A ) -0.453213 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 127 and name HN and segid A ) -0.288575 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 127 and name C and segid A ) -0.271063 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 128 and name N and segid A ) -0.132619 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 128 and name HN and segid A ) -0.144398 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 128 and name C and segid A ) 0.338664 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 129 and name N and segid A ) 0.13874 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 129 and name HN and segid A ) 0.029841 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 131 and name C and segid A ) 0.717936 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 132 and name N and segid A ) 0.334802 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 132 and name HN and segid A ) 0.429102 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 132 and name C and segid A ) 0.631133 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 133 and name N and segid A ) 0.772293 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 133 and name HN and segid A ) 0.874638 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 133 and name C and segid A ) 1.06172 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 134 and name N and segid A ) 1.39012 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 134 and name HN and segid A ) 1.29468 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 134 and name C and segid A ) 0.81979 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 135 and name N and segid A ) 0.69543 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 135 and name HN and segid A ) 0.630211 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 135 and name C and segid A ) 0.242992 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 136 and name N and segid A ) 0.396553 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 136 and name HN and segid A ) 0.499565 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 136 and name C and segid A ) 0.652294 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 137 and name N and segid A ) 0.535743 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 137 and name HN and segid A ) 0.815769 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 137 and name C and segid A ) 0.619043 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 138 and name N and segid A ) 0.648262 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 138 and name HN and segid A ) 0.690824 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 140 and name C and segid A ) -0.0514036 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 141 and name N and segid A ) 0.022935 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 141 and name HN and segid A ) 0.235364 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 151 and name C and segid A ) 1.75988 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 152 and name N and segid A ) 2.21715 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 152 and name HN and segid A ) 2.45367 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 153 and name C and segid A ) 1.92415 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 154 and name N and segid A ) 2.41184 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 154 and name HN and segid A ) 2.82098 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 178 and name C and segid A ) 1.78702 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 179 and name N and segid A ) 1.5263 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 179 and name HN and segid A ) 1.7623 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 179 and name C and segid A ) 1.27546 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 180 and name N and segid A ) 1.24101 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 180 and name HN and segid A ) 1.34296 0.150000000000
+assign ( resid 997  and name OO )
+       ( resid 997  and name Z )
+       ( resid 997  and name X )
+       ( resid 997  and name Y )
+( resid 180 and name C and segid A ) 1.0622 0.150000000000

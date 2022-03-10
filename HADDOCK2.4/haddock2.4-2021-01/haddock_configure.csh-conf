@@ -1,0 +1,21 @@
+#!/bin/tcsh
+#
+# HADDOCK configuration file
+#
+#
+setenv HADDOCK HCLOUD
+setenv HADDOCKTOOLS $HADDOCK/tools
+if (${?PYTHONPATH}) then
+  setenv PYTHONPATH ${PYTHONPATH}:${HADDOCK}
+else
+  setenv PYTHONPATH ${HADDOCK}
+endif
+alias  haddock2.4 `which python` $HADDOCK/Haddock/RunHaddock.py
+#alias  haddock2.4 /home/enmr/software/python/bin/python $HADDOCK/Haddock/RunHaddock.py
+#
+# Define location of third party software
+#
+setenv NACCESS `which naccess`
+setenv PALES   `which pales`
+setenv PROFIT  `which profit`
+setenv TENSOR2 `which tensor2`

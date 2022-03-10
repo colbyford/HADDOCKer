@@ -1,0 +1,4 @@
+set CNSTMP=/home/software/science/cns/cns_solve_1.31-UU/intel-x86_64bit-linux/bin/cns
+set QUEUETMP="qsub "
+set NUMJOB=50
+set QUEUESUB=QueueSubmit_concat.py

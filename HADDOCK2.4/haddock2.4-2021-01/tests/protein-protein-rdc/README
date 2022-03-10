@@ -1,0 +1,137 @@
+=================================================
+|                                               |
+|DI-UBIQUITIN TUTORIAL FOR THE HADDOCK WEBSERVER|
+|USING RDC AND CSP DATA                         |
+|                                               |
+=================================================
+
+This tutorial file contains a description of the di-ubiquitin docking 
+case as was approximately performed in (1). It uses the GURU interface
+of the HADDOCK webserver (haddock.science.uu.nl/Haddock). 
+
+     */Note/* The data used for the docking comes from CSP and RDC NMR
+              experiments (2).
+              A paper describing the tutorial and docking case can be 
+              found in (3). 
+
+This file contains the following sections:
+    1. Contents
+    2. Setting up the HADDOCK webserver parameters
+     * References
+
+-----------------------------------------------------------------------
+
+*1.* *_Contents_*
+
+The tutorial directory contains three folders:
+
+    pdbs/       : It contains the structures used for docking. 
+                  For the webserver only the 1AAR_1D3Z_ensemble.pdb 
+                  is of importance. 
+
+                  Files: 1AAR_[1-2].pdb
+                         1D3Z_0[01-10].pdb
+                         1AAR_1D3Z_ensemble.pdb
+
+    data/       : Data files used to create the HADDOCK/CNS restraints.
+                  
+                  Files: active-passive_residues.data
+                             a list of the active and passive residues
+                             for each chain. 
+
+                         alignment_tensor_pc.data
+                             the principal components of the alignment
+                             tensor used to create the VEAN restraints.
+                             also holds the R and D values used during
+                             docking.
+
+                         ubiDP_rdc_segid.data
+                             the RDC value for each residue on each
+                             chain. 
+
+    restraints/ : The HADDOCK/CNS restraint files.   
+                  
+                  Files: ubiD-ubiP_airs.tbl    
+                             defines the AIR restraints, based on the 
+                             active and passive residues.
+
+                         ubiD-ubiP_pepbond.tbl 
+                             unambiguous interaction restraints, which
+                             represent the isopeptide bond.
+
+                         ubiDP_vean_inter.tbl  
+                             intermolecular VEAN restraints.
+
+                         ubiDP_vean_intra.tbl  
+                             intramolecular VEAN restraints.
+
+                         UbiDP_sani.tbl        
+                             direct SANI restraints.
+
+    haddockparam-di-ubiquitin.web: this is an example of a paramter file that can be downloaded 
+                                   from the web server after a successful submission. This file can be
+                                   uploaded in the file upload interface of the web server.
+
+-----------------------------------------------------------------------
+
+*2.* *_Setting up the HADDOCK webserver parameters_*
+
+1. Go to the HADDOCK webserver located at haddock.science.uu.nl/Haddock
+and open the GURU interface. 
+
+2. Give the docking run a name (di-ubiquitin_CSP_RDC).
+
+3. Expand the **First molecule** section. Set _Where is the structure 
+provided?_ to _I am submitting it_. Set _Which chain of the structure
+must be used?_ to _A_. Click on the _Browse..._ button next to _PDB 
+structure to submit_ and select the _1AAR_1D3Z_ensemble.pdb_ file.
+
+4. Next to _Active residues_ fill in the list of residue numbers as given
+in /*active-passive_residues.data*/ file for the first molecule. Expand
+the *Fully flexible segments* section. Set _First number_ of Segment 1
+to 72 and _Last number_ to 76. Uncheck the box _The C-terminus of your
+protein is negatively charged_. 
+
+5. Expand the **Second molecule** section. Set the _Structure definition_
+parameters indentical as in the **First molecule** section. Fill in the
+_Active residues_ and _Passive residues_ as given in 
+/*active-passive_residues.data*/. Expand the *Fully flexible segments* 
+subsection. Set for Segment 1 _First number_ and _Last number_ 
+to 48 and for Segment 2 to 72 and 76 respectively. 
+
+6. Expand the **Distance restraints** section. Click on the _Browse..._ 
+button next to _You can supply a HADDOCK... (unambiguous restraints)_ 
+and select in the restraints folder /*ubiD-ubiP_pepbond.tbl*/. Uncheck
+the _Randomly exclude a fraction of the ambiguous restrants (AIRs)_ 
+box. 
+
+7. Expand the **Sampling parameters** section and set _Number of 
+structures for rigid body docking to 1440. 
+
+8. Expand the **Restraints energy constants** section. Expand the *Energy
+constants for unabmiguous restraints* subsection. Set _hot_, _cool1_, 
+_cool2_ and _cool3_ to 0.1, 1, 5 and 5 respectively.
+
+9. Expand the **Residual dipolar couplings** section. Set _RDC type_ to 
+VEAN in the *Residual dipolar couplings 1* subsection. Expand the 
+-SANI energy constants- subsubsection and set _Last iteration_ to 1. 
+Click on _Browse..._ in the -VEAN energy constants- subsubsection and 
+select in the restraints/ folder /*ubiDP_vean_inter.tbl*/. Expand 
+*Residual dipolor couplings 2*. Set _RDC_type_ to VEAN. In the -SANI 
+energy constants- subsubsection set _First iteration_ and _Last 
+iteration_ to 1. Set the _RDC file_ to /*ubiDP_vean_intra.tbl*/. Expand 
+the *Residual dipolar couplings 3* subsection. Set _RDC type_ to SANI 
+and _R_ and _D_ to 0.057 and -11.49 respectively. In the -SANI energy 
+constants- subsubsection set _First iteration_ and _Last iteration_ to
+2. Upload as _RDC file_ /*ubiDP_sani.tbl*/
+
+10. Go to the bottom of the screen and enter _Username_ and _Password__. 
+Submit the docking run by pressing _Submit Query_. 
+
+-----------------------------------------------------------------------
+
+*_References_*
+
+1. van Dijk A.D.J. /et al./ (2005) /Proteins/ *60*, 367--381
+2. Varadan R. /et al./ (2002) /J.Mol.Biol./ *324*, 637--647
+3. van Zundert G.C.P. /Bonvin A.M.J.J. / (2014) /Methods Mol. Biol./ **, 163--179

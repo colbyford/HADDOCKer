@@ -1,0 +1,13 @@
+#!/bin/gawk -f
+#
+BEGIN {ERR=0.2}
+{ 
+  printf "%s\n", "!";
+  printf "%s\n", "assi ( resid 998 and name OO )";
+  printf "%s\n", "     ( resid 998 and name Z  )";
+  printf "%s\n", "     ( resid 998 and name X  )";
+  printf "%s\n", "     ( resid 998 and name Y  )";
+  printf "%s%4d%s%s%s\n", "     ( resid ",$1," and name N and segid ",$3," )";
+  printf "%s%4d%s%s%s%8.3f%8.3f\n", "     ( resid ",$1," and name HN and segid ",$3," )",$2,ERR;
+}
+

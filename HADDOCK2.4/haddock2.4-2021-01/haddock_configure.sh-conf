@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# HADDOCK configuration file
+#
+HADDOCK="HCLOUD"
+HADDOCKTOOLS="$HADDOCK/tools"
+PYTHONPATH="${PYTHONPATH}:$HADDOCK"
+alias haddock2.4="$(which python) $HADDOCK/Haddock/RunHaddock.py"
+#alias haddock2.4="/home/enmr/software/python/bin/python $HADDOCK/Haddock/RunHaddock.py"
+
+#
+# Define location of third party software
+#
+NACCESS=`which naccess`
+PALES=`which pales`
+PROFIT=`which profit`
+TENSOR2=`which tensor2`
+
+export HADDOCK HADDOCKTOOLS PYTHONPATH NACCESS PALES PROFIT TENSOR2

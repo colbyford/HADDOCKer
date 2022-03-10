@@ -1,0 +1,148 @@
+--- ./run.cns	2019-03-12 11:34:44.927509203 +0100
++++ ../run_ref_for_patch.cns	2019-03-12 11:34:34.124420606 +0100
+@@ -567,15 +567,15 @@
+ 
+ {==================== histidine patches =====================}
+ {* Automatically define histidine protonation state based on energetics *}
+-{===>} autohis=true;
++{===>} autohis=false;
+ 
+ {* Patch to change doubly protonated HIS to singly protonated histidine (HD1) *}
+ {* just give the residue number of the histidines for the HISD patch, set them to zero if you don't want them *}
+ 
+ {* Number of HISD for molecule 1 *}
+-{===>} numhisd_1=0;
++{===>} numhisd_1=1;
+ 
+-{===>} hisd_1_1=0;
++{===>} hisd_1_1=98;
+ {===>} hisd_1_2=0;
+ {===>} hisd_1_3=0;
+ {===>} hisd_1_4=0;
+@@ -602,9 +602,9 @@
+ {===>} hisd_1_25=0;
+ 
+ {* Number of HISD for molecule 2 *}
+-{===>} numhisd_2=0;
++{===>} numhisd_2=1;
+ 
+-{===>} hisd_2_1=0;
++{===>} hisd_2_1=98;
+ {===>} hisd_2_2=0;
+ {===>} hisd_2_3=0;
+ {===>} hisd_2_4=0;
+@@ -631,9 +631,9 @@
+ {===>} hisd_2_25=0;
+ 
+ {* Number of HISD for molecule 3 *}
+-{===>} numhisd_3=0;
++{===>} numhisd_3=1;
+ 
+-{===>} hisd_3_1=0;
++{===>} hisd_3_1=98;
+ {===>} hisd_3_2=0;
+ {===>} hisd_3_3=0;
+ {===>} hisd_3_4=0;
+@@ -2745,34 +2745,34 @@
+ {====================== NCS restraints  =====================}
+ {* Do you want to use NCS restraints? *}
+ {+ choice: true false +}
+-{===>} ncs_on=false;
++{===>} ncs_on=true;
+ 
+ {* Force constant for NCS restraints *}
+ {===>} kncs=1.0;
+ 
+ {* Number of NCS pairs *}
+-{===>} numncs=0;
++{===>} numncs=3;
+ 
+ {* Define the segments pairs for NCS restraints *}
+ {+ table: rows=5 "pair 1" "pair 2" "pair 3" "pair 4" "pair 5" cols=6 "Start res seg1" "End res seg1" "Segid seg1" "Start res seg2" "End res seg2" "Segid seg2" +}
+-{===>} ncs_sta1_1="";
+-{===>} ncs_end1_1="";
+-{===>} ncs_seg1_1="";
+-{===>} ncs_sta2_1="";
+-{===>} ncs_end2_1="";
+-{===>} ncs_seg2_1="";
+-{===>} ncs_sta1_2="";
+-{===>} ncs_end1_2="";
+-{===>} ncs_seg1_2="";
+-{===>} ncs_sta2_2="";
+-{===>} ncs_end2_2="";
+-{===>} ncs_seg2_2="";
+-{===>} ncs_sta1_3="";
+-{===>} ncs_end1_3="";
+-{===>} ncs_seg1_3="";
+-{===>} ncs_sta2_3="";
+-{===>} ncs_end2_3="";
+-{===>} ncs_seg2_3="";
++{===>} ncs_sta1_1="2";
++{===>} ncs_end1_1="128";
++{===>} ncs_seg1_1="A";
++{===>} ncs_sta2_1="2";
++{===>} ncs_end2_1="128";
++{===>} ncs_seg2_1="B";
++{===>} ncs_sta1_2="2";
++{===>} ncs_end1_2="128";
++{===>} ncs_seg1_2="B";
++{===>} ncs_sta2_2="2";
++{===>} ncs_end2_2="128";
++{===>} ncs_seg2_2="C";
++{===>} ncs_sta1_3="2";
++{===>} ncs_end1_3="128";
++{===>} ncs_seg1_3="C";
++{===>} ncs_sta2_3="2";
++{===>} ncs_end2_3="128";
++{===>} ncs_seg2_3="A";
+ {===>} ncs_sta1_4="";
+ {===>} ncs_end1_4="";
+ {===>} ncs_seg1_4="";
+@@ -2789,7 +2789,7 @@
+ {==================== Symmetry restraints  ==================}
+ {* Do you want to use symmetry restraints ? *}
+ {+ choice: true false +}
+-{===>} sym_on=false;
++{===>} sym_on=true;
+ 
+ {* Force constant for symmetry restraints ? *}
+ {===>} ksym=10.0;
+@@ -2862,19 +2862,19 @@
+ 
+ 
+ {* Number of C3 symmetry triples*}
+-{===>} numc3sym=0;
++{===>} numc3sym=1;
+ 
+ {* Define the segment triples for C3 symmetry restraints *}
+ {+ table: rows=2 "triple 1" "triple 2" cols=9 "Start res seg1" "End res seg1" "Segid seg1" "Start res seg2" "End res seg2" "Segid seg2" "Start res seg3" "End res seg3" "Segid seg3" +}
+-{===>} c3sym_sta1_1="";
+-{===>} c3sym_end1_1="";
+-{===>} c3sym_seg1_1="";
+-{===>} c3sym_sta2_1="";
+-{===>} c3sym_end2_1="";
+-{===>} c3sym_seg2_1="";
+-{===>} c3sym_sta3_1="";
+-{===>} c3sym_end3_1="";
+-{===>} c3sym_seg3_1="";
++{===>} c3sym_sta1_1="2";
++{===>} c3sym_end1_1="128";
++{===>} c3sym_seg1_1="A";
++{===>} c3sym_sta2_1="2";
++{===>} c3sym_end2_1="128";
++{===>} c3sym_seg2_1="B";
++{===>} c3sym_sta3_1="2";
++{===>} c3sym_end3_1="128";
++{===>} c3sym_seg3_1="C";
+ {===>} c3sym_sta1_2="";
+ {===>} c3sym_end1_2="";
+ {===>} c3sym_seg1_2="";
+@@ -4373,7 +4373,7 @@
+ {* Setting for the rigid-body (it0) and semi-flexible refiment (it1) *}
+ 
+ {* number of structures for rigid body docking *}
+-{===>} structures_0=1000;
++{===>} structures_0=2000;
+        keepstruct_0=&structures_0;
+ {* number of structures for refinement *}
+ {===>} structures_1=200;

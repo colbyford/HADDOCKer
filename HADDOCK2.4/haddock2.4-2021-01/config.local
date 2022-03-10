@@ -1,0 +1,4 @@
+set CNSTMP=/opt/nmr/cns_solve_1.31-UU/mac-intel-darwin/bin/cns
+set QUEUETMP=/bin/csh
+set NUMJOB=4
+set QUEUESUB=QueueSubmit_concat.py

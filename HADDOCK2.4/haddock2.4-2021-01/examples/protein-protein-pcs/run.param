@@ -1,0 +1,13 @@
+HADDOCK_DIR=../../
+N_COMP=2
+PDB_FILE1=./DATA/epsilon_native.pdb
+PDB_FILE2=./DATA/hot_native.pdb
+PROJECT_DIR=./
+PCS1_FILE=./DATA/Dy_eps_HOT_0.15_.tbl
+PCS2_FILE=./DATA/Er_eps_HOT_0.15_.tbl
+PCS3_FILE=./DATA/Tb_eps_HOT_0.15_.tbl
+TENSOR_FILE=./DATA/tensor_basic.tbl
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+RUN_NUMBER=1
+UNAMBIG_TBL=./DATA/unambig.tbl

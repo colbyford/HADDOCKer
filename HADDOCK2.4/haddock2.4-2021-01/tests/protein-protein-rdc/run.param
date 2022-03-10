@@ -1,0 +1,15 @@
+AMBIG_TBL=./restraints/ubiD-ubiP_airs.tbl
+HADDOCK_DIR=../../
+N_COMP=2
+PDB_FILE1=./pdbs/1AAR_1.pdb
+PDB_FILE2=./pdbs/1AAR_2.pdb
+PDB_LIST1=./ubiquitin-pdbs1.list
+PDB_LIST2=./ubiquitin-pdbs2.list
+PROJECT_DIR=./
+RDC1_FILE=./restraints/ubiDP_vean_inter.tbl
+RDC2_FILE=./restraints/ubiDP_vean_intra.tbl
+RDC3_FILE=./restraints/ubiDP_sani.tbl
+PROT_SEGID_1=A
+PROT_SEGID_2=B
+RUN_NUMBER=1
+UNAMBIG_TBL=./restraints/ubiD-ubiP_pepbond.tbl

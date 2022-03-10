@@ -1,0 +1,9 @@
+    zone A83-A169
+    zone A170-A305
+    zone A310-A330
+    zone A350-A390
+    zone A415-A430
+    zone A435-A450
+    fit
+    ratoms ^H*
+    rzone B*

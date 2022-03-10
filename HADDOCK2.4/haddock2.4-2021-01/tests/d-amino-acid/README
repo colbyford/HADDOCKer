@@ -1,0 +1,27 @@
+D-amino acid detection test case
+======================================
+
+
+Examples run files are:
+run_ref_for_patch.cns: cyclic peptide detection (peptidic bond) and refinement 
+
+
+# FOR RUNNING THE TEST 
+#
+# first source the haddock_configure.csh scripts for your version of HADDOCK
+
+source ./run-test.csh >&cyclic-peptide.diff&
+
+# and when complete, check the cyclic-peptide.out for differences with the reference run stored in the refe directory
+
+
+# UPDATING THE PATCH FILE - FOR HADDOCK DEVELOPERS
+
+# To create the patch (need to be done only when the default run.cns change too much
+# and this is detected when the patch doesn't work anymore, you should:
+# 1. Create a normal run1 dir.
+# 2. Copy run1/run.cns to run_ref_for_patch.cns
+# 3. Edit run_ref_for_patch.cns for the needs of the docking
+# 4. Create the patch file:
+cd run1
+diff -Nur run.cns ../run_ref_for_patch.cns > ../run.cns.patch
