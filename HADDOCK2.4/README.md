@@ -19,6 +19,25 @@ docker run --name haddock2_4 -d haddock2_4
 docker exec -it haddock2_4 /bin/tcsh
 ```
 
+## Usage
+```sh
+cd $HOME/haddock/haddock2.4-2021-01/
+# source haddock_configure.csh
+
+cd examples/protein-protein
+
+# haddock2.4 run.cns
+# cd run1
+# haddock2.4 run.param
+
+./run-example.csh
+
+## Find the best PDB based on HADDOCK Score
+cluster_haddock-score.txt_best4
+file.nam_clust1_haddock-score
+nano protein-protein_3.pdb
+```
+
 -------------------------------------------
 
 ## Licensing
