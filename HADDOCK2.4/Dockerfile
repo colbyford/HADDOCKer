@@ -87,14 +87,14 @@ RUN cd $HOME/haddock/haddock2.4-2021-01 && \
     #source ./haddock_configure.csh
 
 ## Mimic haddock_configure.csh task
-ENV HADDOCK $HOME/haddock/haddock2.4-2021-01
-ENV HADDOCKTOOLS $HADDOCK/tools
-ENV PYTHONPATH ${HADDOCK}
-RUN alias haddock2.4 `which python` $HADDOCK/Haddock/RunHaddock.py
-ENV NACCESS `which naccess`
-ENV PALES `which pales`
-ENV PROFIT `which profit`
-ENV TENSOR2 `which tensor2`
+# ENV HADDOCK $HOME/haddock/haddock2.4-2021-01
+# ENV HADDOCKTOOLS $HADDOCK/tools
+# ENV PYTHONPATH ${HADDOCK}
+# RUN alias haddock2.4 `which python` $HADDOCK/Haddock/RunHaddock.py
+# ENV NACCESS `which naccess`
+# ENV PALES `which pales`
+# ENV PROFIT `which profit`
+# ENV TENSOR2 `which tensor2`
 
 # COPY local_config_file /software/haddock2.4-2021-01
 # RUN cd /software/haddock2.4-2021-01 && \
@@ -104,7 +104,6 @@ ENV TENSOR2 `which tensor2`
 
 ## Grant execution permissions to entire dir
 RUN sudo chmod -R 777 $home
-
 
 ## Fix Symlink issue to QueueSubmit.py
 RUN cd $HOME/haddock/haddock2.4-2021-01/Haddock/Main/ && \
