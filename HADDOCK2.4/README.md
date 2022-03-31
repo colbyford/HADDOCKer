@@ -15,7 +15,8 @@ docker build -t haddock2_4 .
 
 4. Once the container is ready, remote into the tcsh terminal.
 ```
-docker run --name haddock2_4 -d haddock2_4
+# docker run --name haddock2_4 -d haddock2_4
+## Mount a volume on your local machine
 docker run -v T:\haddock_tests:/data --name haddock2_4 -d haddock2_4
 docker exec -it haddock2_4 /bin/tcsh
 ```
