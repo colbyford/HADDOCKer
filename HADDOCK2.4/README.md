@@ -40,6 +40,10 @@ file.nam_clust1_haddock-score
 nano protein-protein_3.pdb
 ```
 
+## Notes
+
+- The `ana_scripts/` folder is very useful for performing the post analysis on the HADDOCK run.
+
 -------------------------------------------
 
 ## Licensing
