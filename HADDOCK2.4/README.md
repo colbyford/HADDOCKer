@@ -49,7 +49,7 @@ nano protein-protein_3.pdb
 
 ## Licensing
 
-This container image includes software libraries that each require a license. Please fill out the following license request forms before using this software:
+This container image includes software libraries that each require a license (and may limit use to non-profit/academic work). Please fill out the following license request forms before using this software:
 - HADDOCK 2.4: https://www.bonvinlab.org/software/haddock2.4/download
 - CNSsolve 1.3: http://cns-online.org/v1.3/
 
