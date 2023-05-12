@@ -61,3 +61,10 @@ HADDOCK:
 CNSsolve:
 - A.T. Brunger, P.D. Adams, G.M. Clore, P.Gros, R.W. Grosse-Kunstleve, J.-S. Jiang, J. Kuszewski, N. Nilges, N.S. Pannu, R.J. Read, L.M. Rice, T. Simonson, G.L. Warren,Crystallography & NMR System (CNS), A new software suite for macromolecular structure determination, Acta Cryst.D54, 905-921(1998).
 - A.T. Brunger, Version 1.2 of the Crystallography and NMR System, Nature Protocols 2, 2728-2733 (2007).
+
+
+## Push to Container Registry
+```bash
+docker tag haddock2_4 cford38/haddock:2.4
+docker push cford38/haddock:2.4
+```
