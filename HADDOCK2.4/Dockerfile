@@ -1,6 +1,4 @@
-# FROM ubuntu:16.04
 FROM phusion/baseimage:0.9.16
-# FROM mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu16.04
 
 ENV DEBIAN_FRONTEND noninteractive
 USER root
@@ -72,7 +70,6 @@ RUN setenv PFX $HOME/haddock && \
     make install && \
     popd
 
-
 ## Copy config file
 COPY local_config_file $HOME/haddock/haddock2.4-2021-01/
 
@@ -83,24 +80,6 @@ RUN cd $HOME/haddock/cns_solve/intel-x86_64bit-linux/source && \
 ## Configure HADDOCK
 RUN cd $HOME/haddock/haddock2.4-2021-01 && \
     ./install.csh local_config_file
-    #&& \
-    #source ./haddock_configure.csh
-
-## Mimic haddock_configure.csh task
-# ENV HADDOCK $HOME/haddock/haddock2.4-2021-01
-# ENV HADDOCKTOOLS $HADDOCK/tools
-# ENV PYTHONPATH ${HADDOCK}
-# RUN alias haddock2.4 `which python` $HADDOCK/Haddock/RunHaddock.py
-# ENV NACCESS `which naccess`
-# ENV PALES `which pales`
-# ENV PROFIT `which profit`
-# ENV TENSOR2 `which tensor2`
-
-# COPY local_config_file /software/haddock2.4-2021-01
-# RUN cd /software/haddock2.4-2021-01 && \
-#     ./install.csh local_config_file 
-    # && \
-    # source haddock_configure.csh
 
 ## Grant execution permissions to entire dir
 RUN sudo chmod -R 777 $home
