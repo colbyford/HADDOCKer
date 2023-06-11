@@ -13,10 +13,9 @@ Docker image for the running the HADDOCK system for predicting the structure of 
 docker build -t haddock3 .
 ```
 
-4. Once the container is ready, remote into the tcsh terminal.
+4. Once the container is ready, remote into the bash terminal.
 ```
 docker run --name haddock3 -it haddock3 /bin/bash
-docker exec -it haddock3 /bin/bash
 ```
 
 -------------------------------------------
