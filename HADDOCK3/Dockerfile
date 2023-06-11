@@ -1,31 +1,43 @@
 # FROM phusion/baseimage:0.9.16
-FROM jupyter/scipy-notebook:latest
-# FROM python:3.7
+# FROM jupyter/scipy-notebook:latest
+FROM python:3.9
 
 MAINTAINER Colby T. Ford <colby.ford@uncc.edu>
 
-## global env
-# ENV HOME=/home TERM=xterm
+ENV DEBIAN_FRONTEND noninteractive
+USER root
 
-## Change bash Shell to tcshRUN \
-# RUN apt-get update && \
-#     # apt-get dist-upgrade -y && \
-#     apt-get install tcsh sudo && \
-#     chsh -s /bin/tcsh
-#     # chsh -s /usr/bin/tcsh
-# SHELL ["/bin/tcsh", "-c"]
-
-## set proper timezone
-# RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
+RUN apt-get update && \
+    apt-get install -y \
+        build-essential \
+        git \
+        wget \
+        cmake
 
 ## Make software directory
-RUN mkdir software
+RUN mkdir /software
+WORKDIR /software
 
-## Get HADDOCK 3
-## Source: https://github.com/haddocking/haddock3/archive/refs/tags/v3.0.alpha2.tar.gz
-COPY haddock3-3.0.alpha2.tar.gz /software
-RUN cd software && \
-    mkdir haddock && \
-    tar xvfz haddock3-3.0.alpha2.tar.gz -C /software/haddock && \
-    cd haddock && \
-    pip install -r requirements.txt
+## Install HADDOCK 3
+## Source: https://github.com/haddocking/haddock3
+RUN git clone --recursive https://github.com/haddocking/haddock3.git
+
+RUN cd /software/haddock3/src/fcc/src && \
+    chmod u+x Makefile && \
+    make
+
+RUN cd /software/haddock3 && \
+    pip install -r requirements.txt && \
+    python setup.py develop --no-deps
+
+## Install CNSsolve (http://cns-online.org/v1.3/)
+COPY cns_solve_1.3_all_intel-mac_linux.tar.gz /software/
+RUN tar -xzf /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
+    mv /software/cns_solve_1.3/ /software/cns_solve/ && \
+    rm /software/cns_solve_1.3_all_intel-mac_linux.tar.gz
+
+RUN cd /software/cns_solve/intel-x86_64bit-linux/source && \
+    find . -type f -name 'cns_solve*.exe' -exec sh -c 'x="{}"; mv "$x" "cns_solve.exe"' \;
+
+RUN mkdir -p /software/haddock3/bin/ && \
+    ln -s /software/cns_solve/intel-x86_64bit-linux/source/cns_solve.exe /software/haddock3/bin/cns

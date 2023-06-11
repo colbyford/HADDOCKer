@@ -15,8 +15,8 @@ docker build -t haddock3 .
 
 4. Once the container is ready, remote into the tcsh terminal.
 ```
-docker run --name haddock3 -d haddock3
-docker exec -it haddock3 /bin/tcsh
+docker run --name haddock3 -it haddock3 /bin/bash
+docker exec -it haddock3 /bin/bash
 ```
 
 -------------------------------------------
