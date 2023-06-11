@@ -1,5 +1,7 @@
 FROM phusion/baseimage:0.9.16
 
+LABEL maintainer="Colby T. Ford <colby@tuple.xyz>"
+
 ENV DEBIAN_FRONTEND noninteractive
 USER root
 
