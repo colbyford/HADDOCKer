@@ -24,6 +24,8 @@ RUN apt-get update && \
         flex \
         gfortran \
         python-pip \
+        python3-pip \
+        python3-pandas \
         python2.7 \
         python2.7-dev
 
