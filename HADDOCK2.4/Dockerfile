@@ -10,6 +10,9 @@ USER root
 ## global env
 # ENV HOME=/home TERM=xterm
 
+## Set the number of cores you want cns/HADDOCK to use
+ARG CORES=24
+
 ## set proper timezone
 # RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
 
@@ -83,6 +86,7 @@ RUN cd $HOME/haddock/cns_solve/intel-x86_64bit-linux/source && \
 
 ## Configure HADDOCK
 RUN cd $HOME/haddock/haddock2.4-2021-01 && \
+    sed -i s/NUMJOB=24/NUMJOB=$CORES/g local_config_file && \
     ./install.csh local_config_file
 
 ## Grant execution permissions to entire dir

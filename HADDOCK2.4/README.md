@@ -8,10 +8,16 @@ Docker image for the running the HADDOCK system v2.4 for predicting the quartern
 
 2. Open terminal and navigate to the directory of this repository.
 
-3. Run the following command. This will generate the Docker image.
+3. Run the following command. This will generate the Docker image.  
+This builds for 24 cores by default.  
 ```
 docker build -t haddock2_4 .
 ```
+Optionally, you may override the number of cores used. e.g. for 64 cores  
+```
+docker build -t haddock2_4 . --build-arg CORES=64
+```  
+
 
 4. Once the container is ready, remote into the tcsh terminal.
 ```
