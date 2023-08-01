@@ -13,7 +13,7 @@ This builds for 24 cores by default.
 ```
 docker build -t haddock2_4 .
 ```
-Optionally, you may override the number of cores used. e.g. for 64 cores  
+Optionally, you may override the number of cores used. For example, to build for 64 cores, set the `CORES` build argument to 64.
 ```
 docker build -t haddock2_4 . --build-arg CORES=64
 ```  
