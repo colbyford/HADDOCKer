@@ -12,6 +12,7 @@ RUN apt-get update && \
         nano \
         wget \
         cmake \
+        gfortran \
         csh && \
     apt-get clean 
 
@@ -35,7 +36,7 @@ RUN export CNS=/software/cns_solve && \
     mv /software/cns_solve_1.3/ $CNS && \
     rm /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
     cp -r /software/haddock3/varia/cns1.3 $CNS/source && \
-    sed -i 's/_CNSsolve_location_/$CNS/g' $CNS/cns_solve_env && \
+    sed -i 's/_CNSsolve_location_/\/software\/cns_solve/g' $CNS/cns_solve_env && \
     chmod -R 777 /software && \
     cd $CNS && \
     make install
