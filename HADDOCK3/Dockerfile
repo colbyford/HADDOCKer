@@ -1,4 +1,4 @@
-FROM python:3.9-buster
+FROM python:3.9-bullseye
 
 LABEL maintainer="Colby T. Ford <colby@tuple.xyz>"
 
@@ -6,8 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 USER root
 
 # gfortran-9 is the latest supported by CNS
-# Debian Bullseye (11) is the latest that has it, but it can't be found by CNS
-# Debian Buster (10) installs gfortran-8 by default with "gfortran"
+# gfortran-10 changed type mismatch warnings to errors
+# Debian Bullseye (11) is the latest with gfortran-9
 RUN apt-get update && \
     apt-get install -y \
         build-essential \
@@ -15,10 +15,11 @@ RUN apt-get update && \
         nano \
         wget \
         cmake \
-        gfortran \
+        gfortran-9 \
         flex \
         csh && \
-    apt-get clean 
+    apt-get clean && \
+    ln -s /usr/bin/gfortran-9 /usr/bin/gfortran
 
 ## Make software directory
 RUN mkdir /software
@@ -39,7 +40,7 @@ RUN export CNS=/software/cns_solve && \
     tar -xzf /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
     mv /software/cns_solve_1.3/ $CNS && \
     rm /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
-    cp -r /software/haddock3/varia/cns1.3 $CNS/source && \
+    cp /software/haddock3/varia/cns1.3/* $CNS/source && \
     sed -i 's/_CNSsolve_location_/\/software\/cns_solve/g' $CNS/cns_solve_env && \
     chmod -R 777 /software && \
     cd $CNS && \
