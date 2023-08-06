@@ -1,10 +1,13 @@
-FROM python:3.9
+FROM python:3.9-buster
 
 LABEL maintainer="Colby T. Ford <colby@tuple.xyz>"
 
 ENV DEBIAN_FRONTEND noninteractive
 USER root
 
+# gfortran-9 is the latest supported by CNS
+# Debian Bullseye (11) is the latest that has it, but it can't be found by CNS
+# Debian Buster (10) installs gfortran-8 by default with "gfortran"
 RUN apt-get update && \
     apt-get install -y \
         build-essential \
@@ -13,6 +16,7 @@ RUN apt-get update && \
         wget \
         cmake \
         gfortran \
+        flex \
         csh && \
     apt-get clean 
 
@@ -39,10 +43,10 @@ RUN export CNS=/software/cns_solve && \
     sed -i 's/_CNSsolve_location_/\/software\/cns_solve/g' $CNS/cns_solve_env && \
     chmod -R 777 /software && \
     cd $CNS && \
-    make install
+    make install compiler=gfortran
 
 RUN mkdir -p /software/haddock3/bin/ && \
-    ln -s /software/cns_solve/intel-x86_64bit-linux/source/cns_solve-1111091055.exe /software/haddock3/bin/cns
+    ln -s /software/cns_solve/intel-x86_64bit-linux/source/*.exe /software/haddock3/bin/cns
 
 ## Compile HADDOCK
 RUN cd /software/haddock3/src/fcc/src && \
