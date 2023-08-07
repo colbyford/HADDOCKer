@@ -1,7 +1,7 @@
 # HADDOCKer
 Docker image for the running the HADDOCK system for predicting the structure of biomolecular complexes.
 
-<h3 align="right">Colby T. Ford, Ph.D.</h3>
+<h3 align="right">Colby T. Ford, Ph.D. and Rafael Jaimes III, Ph.D.</h3>
 
 ## Build Instructions
 1. Clone this repository to your local machine
