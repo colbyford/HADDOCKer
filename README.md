@@ -2,7 +2,7 @@
 
 <h3 align="right">Colby T. Ford, Ph.D. and Rafael Jaimes III, Ph.D.</h3>
 
-Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven protein-protein **DOCK**ing) system for predicting the structure of biomolecular complexes.
+Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven protein-protein **DOCK**ing) system to predict the structure of biomolecular complexes.
 
 | [HADDOCK 2.4](HADDOCK2.4) 	| [HADDOCK 3](HADDOCK3) 	|
 |-------------	|-----------	|
