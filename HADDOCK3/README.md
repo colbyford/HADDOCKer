@@ -9,14 +9,14 @@ Docker image for the running the HADDOCK system for predicting the structure of 
 2. Open terminal and navigate to the directory of this repository.
 
 3. Run the following command. This will generate the Docker image.
-```
+```sh
 docker build -t haddock3 .
 ```
 
 4. Once the container is ready, remote into the bash terminal.
-```
+```sh
 docker run --name haddock3 -it haddock3 /bin/bash
-docker exec -it haddock3 /bin/bash
+# docker exec -it haddock3 /bin/bash
 ```
 
 -------------------------------------------
