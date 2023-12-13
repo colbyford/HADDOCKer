@@ -10,11 +10,11 @@ Docker image for the running the HADDOCK system v2.4 for predicting the quartern
 
 3. Run the following command. This will generate the Docker image.  
 This builds for 24 cores by default.  
-```
+```sh
 docker build -t haddock2_4 .
 ```
 Optionally, you may override the number of cores used. For example, to build for 64 cores, set the `CORES` build argument to 64.
-```
+```sh
 docker build -t haddock2_4 . --build-arg CORES=64
 ```  
 
