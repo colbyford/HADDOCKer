@@ -1,6 +1,6 @@
 FROM python:3.9-bullseye
 
-LABEL maintainer="Colby T. Ford <colby@tuple.xyz>"
+LABEL maintainer="Colby T. Ford <colby@tuple.xyz>, Rafael Jaimes III <rafael.jaimes@ll.mit.edu>"
 
 ENV DEBIAN_FRONTEND noninteractive
 USER root
