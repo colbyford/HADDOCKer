@@ -10,5 +10,6 @@ Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven pro
 
 
 ## Citations
-- R.V. Honorato, P.I. Koukos, B. Jimenez-Garcia, A. Tsaregorodtsev, M. Verlato, A. Giachetti, A. Rosato and A.M.J.J. Bonvin (2021). "Structural biology in the clouds: The WeNMR-EOSC Ecosystem." Frontiers Mol. Biosci., 8, fmolb.2021.729513.
-- G.C.P van Zundert, J.P.G.L.M. Rodrigues, M. Trellet, C. Schmitz, P.L. Kastritis, E. Karaca, A.S.J. Melquiond, M. van Dijk, S.J. de Vries and A.M.J.J. Bonvin (2016). "The HADDOCK2.2 webserver: User-friendly integrative modeling of biomolecular complexes." J. Mol. Biol., 428, 720-725 (2015).
+
+- R.V. Honorato, P.I. Koukos, B. Jimenez-Garcia, A. Tsaregorodtsev, M. Verlato, A. Giachetti, A. Rosato and A.M.J.J. Bonvin (2021). "[Structural biology in the clouds: The WeNMR-EOSC Ecosystem](https://doi.org/10.3389/fmolb.2021.729513)." *Frontiers Mol. Biosci.*, 8, fmolb.2021.729513.
+- G.C.P van Zundert, J.P.G.L.M. Rodrigues, M. Trellet, C. Schmitz, P.L. Kastritis, E. Karaca, A.S.J. Melquiond, M. van Dijk, S.J. de Vries and A.M.J.J. Bonvin (2016). "[The HADDOCK2.2 webserver: User-friendly integrative modeling of biomolecular complexes](http://dx.doi.org/doi:10.1016/j.jmb.2015.09.014)." *J. Mol. Biol.*, 428, 720-725 (2015).
