@@ -71,6 +71,9 @@ CNSsolve:
 
 ## Push to Container Registry
 ```bash
-docker tag haddock2_4 cford38/haddock:2.4
-docker push cford38/haddock:2.4
+docker tag haddock2_4 <USERNAME>/haddock:2.4
+docker push <USERNAME>/haddock:2.4
+
+# docker tag haddock2_4 cford38/haddock:2.4
+# docker push cford38/haddock:2.4
 ```
