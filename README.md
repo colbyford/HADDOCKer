@@ -7,6 +7,13 @@ Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven pro
 | [HADDOCK 2.4](HADDOCK2.4) 	| [HADDOCK 3](HADDOCK3) 	|
 |-------------	|-----------	|
 
+## Licensing
+This container images in this repository includes software libraries that each require a license (and may limit use to non-profit/academic work). Please fill out the following license request forms before using this software:
+
+- HADDOCK:
+  - v2.4: https://www.bonvinlab.org/software/haddock2.4/download
+  - v3: https://github.com/haddocking/haddock3
+- CNSsolve 1.3: http://cns-online.org/v1.3/
 
 
 ## Citations
