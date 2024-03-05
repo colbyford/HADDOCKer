@@ -20,7 +20,7 @@ docker build -t haddock2_4 . --build-arg CORES=64
 
 
 4. Once the container is ready, remote into the tcsh terminal.
-```
+```sh
 # docker run --name haddock2_4 -d haddock2_4
 ## Mount a volume on your local machine
 docker run -v T:\haddock_tests:/data --name haddock2_4 -d haddock2_4
