@@ -30,7 +30,9 @@ WORKDIR /software
 RUN git clone --recursive https://github.com/haddocking/haddock3.git && \
     cd haddock3 && \
     ## v3.0.0-beta.3
-    git checkout 1cca9b5
+    # git checkout 1cca9b5
+    ## v3.0.0-beta.5
+    git checkout 1482d85
 
 ## Install CNSsolve (http://cns-online.org/v1.3/)
 COPY cns_solve_1.3_all_intel-mac_linux.tar.gz /software/
