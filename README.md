@@ -8,7 +8,7 @@ Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven pro
 |-------------	|-----------	|
 
 ## Licensing
-This container images in this repository includes software libraries that each require a license (and may limit use to non-profit/academic work). Please fill out the following license request forms before using this software:
+This container images in this repository includes software libraries that each require a license (and may limit use to non-profit/academic work). Please check the licenses and/or fill out the following license request forms before using this software:
 
 - HADDOCK:
   - v2.4: https://www.bonvinlab.org/software/haddock2.4/download
