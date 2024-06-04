@@ -5,9 +5,10 @@ LABEL maintainer="Colby T. Ford <colby@tuple.xyz>, Rafael Jaimes III <rafael.jai
 ENV DEBIAN_FRONTEND noninteractive
 USER root
 
-# gfortran-9 is the latest supported by CNS
-# gfortran-10 changed type mismatch warnings to errors
-# Debian Bullseye (11) is the latest with gfortran-9
+## System dependencies
+## gfortran-9 is the latest supported by CNS
+## gfortran-10 changed type mismatch warnings to errors
+## Debian Bullseye (11) is the latest with gfortran-9
 RUN apt-get update && \
     apt-get install -y \
         build-essential \
@@ -26,18 +27,15 @@ RUN mkdir /software
 WORKDIR /software
 
 ## Checkout HADDOCK 3 and custom cns1.3 files
-## (https://github.com/haddocking/haddock3)
 RUN git clone --recursive https://github.com/haddocking/haddock3.git && \
     cd haddock3 && \
-    ## v3.0.0-beta.3
-    # git checkout 1cca9b5
     ## v3.0.0-beta.5
     git checkout 1482d85
 
 ## Install CNSsolve (http://cns-online.org/v1.3/)
 COPY cns_solve_1.3_all_intel-mac_linux.tar.gz /software/
 
-# the custom cns1.3 files are from the HADDOCK3 repo under "varia"
+## Note: The custom cns1.3 files are from the HADDOCK3 repo under "varia"
 RUN export CNS=/software/cns_solve && \
     tar -xzf /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
     mv /software/cns_solve_1.3/ $CNS && \
@@ -60,4 +58,23 @@ RUN cd /software/haddock3 && \
     pip install -r requirements.txt && \
     python setup.py develop --no-deps
 
+## Install gdock
+## NOTE: gdock is broken as DCOMPLEX is no longer available from Spark Labs
+# RUN cd /software/ && \
+#     git clone https://github.com/rvhonorato/gdock.git && \
+#     cd gdock && \
+#     ## Hacky fix for numpy version
+#     python -m pip uninstall -y numpy && \
+#     python -m pip install numpy>=1.23 && \
+#     python setup.py develop && \
+#     bash install.sh /software/gdock
+# ENV GDOCK_PATH=/software/gdock
+
+## Install LightDock
+# RUN cd /software/ &&\
+#     git clone https://github.com/lightdock/lightdock.git && \
+#     cd lightdock && \
+#     python -m pip install .
+
+## Set Working Directory back to haddock3
 WORKDIR /software/haddock3
