@@ -1,6 +1,6 @@
 # HADDOCKer
 
-<h3 align="right">Colby T. Ford, Ph.D. and Rafael Jaimes III, Ph.D.</h3>
+<h3 align="right">Colby T. Ford, Ph.D., Rafael Jaimes III, Ph.D., and Jonathan Halter</h3>
 
 Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven protein-protein **DOCK**ing) system to predict the structure of biomolecular complexes.
 
