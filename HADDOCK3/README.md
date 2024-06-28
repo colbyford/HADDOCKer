@@ -19,6 +19,23 @@ docker run --name haddock3 -it haddock3 /bin/bash
 # docker exec -it haddock3 /bin/bash
 ```
 
+### Running in Singularity
+If you'd like to use this Docker image in a high-performance computing environment that requires Singularity, simply pull and convert the image using the following logic:
+
+```bash
+## Load the Singularity module
+module load singularity
+
+## Pull the Docker image from DockerHub and output a .sif file
+singularity pull haddock3.sif docker://cford38/haddock:3
+
+## Run commands inside the container interactively
+singularity run haddock3.sif /bin/bash
+
+## or execute the HADDOCK3 application directly
+singularity exec haddock3.sif haddock3 config.cfg
+```
+
 -------------------------------------------
 
 ## Licensing
