@@ -3,6 +3,13 @@ Docker image for the running the HADDOCK system for predicting the structure of 
 
 <h3 align="right">Colby T. Ford, Ph.D. and Rafael Jaimes III, Ph.D.</h3>
 
+## Pull from DockerHub
+If you don't want to build the image you can see a list of prebuilt versions on DockerHub here: https://hub.docker.com/r/cford38/haddock/tags
+
+```bash
+docker pull cford38/haddock:3
+```
+
 ## Build Instructions
 1. Clone this repository to your local machine
 
