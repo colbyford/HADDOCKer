@@ -1,84 +1,36 @@
-FROM python:3.9-bullseye
+FROM python:3.12.13-slim
 
 LABEL maintainer="Colby T. Ford <colby@tuple.xyz>, Rafael Jaimes III <rafael.jaimes@ll.mit.edu>"
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 USER root
 
 ## System dependencies
-## gfortran-9 is the latest supported by CNS
-## gfortran-10 changed type mismatch warnings to errors
-## Debian Bullseye (11) is the latest with gfortran-9
 RUN apt-get update && \
     apt-get install -y \
         build-essential \
         git \
         nano \
         wget \
-        cmake \
-        gfortran-9 \
-        flex \
-        csh && \
-    apt-get clean && \
-    ln -s /usr/bin/gfortran-9 /usr/bin/gfortran
+        cmake && \
+    apt-get clean 
 
 ## Make software directory
 RUN mkdir /software
 WORKDIR /software
 
-## Checkout HADDOCK 3 and custom cns1.3 files
+## Checkout HADDOCK 3
 RUN git clone --recursive https://github.com/haddocking/haddock3.git && \
     cd haddock3 && \
     ## v3.0.0-beta.5
     # git checkout 1482d85
     ## 2024.10.0b6
-    git checkout 8763134
+    # git checkout 8763134
+    ## 2026.03.0
+    git checkout 4d6f6f1
 
-## Install CNSsolve (http://cns-online.org/v1.3/)
-# COPY cns_solve_1.3_all_intel-mac_linux.tar.gz /software/
-
-## Note: The custom cns1.3 files are from the HADDOCK3 repo under "varia"
-# RUN export CNS=/software/cns_solve && \
-#     tar -xzf /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
-#     mv /software/cns_solve_1.3/ $CNS && \
-#     rm /software/cns_solve_1.3_all_intel-mac_linux.tar.gz && \
-#     cp /software/haddock3/varia/cns1.3/* $CNS/source && \
-#     sed -i 's/_CNSsolve_location_/\/software\/cns_solve/g' $CNS/cns_solve_env && \
-#     chmod -R 777 /software && \
-#     cd $CNS && \
-#     make install compiler=gfortran
-
-# RUN mkdir -p /software/haddock3/bin/ && \
-#     ln -s /software/cns_solve/intel-x86_64bit-linux/source/*.exe /software/haddock3/bin/cns
-
-## Compile HADDOCK
-# RUN cd /software/haddock3/src/fcc/src && \
-#     chmod u+x Makefile && \
-#     make
-
-# RUN cd /software/haddock3 && \
-#     pip install -r requirements.txt && \
-#     python setup.py develop --no-deps
 RUN cd /software/haddock3 && \
     pip install .
-
-## Install gdock
-## NOTE: gdock is broken as DCOMPLEX is no longer available from Spark Labs
-# RUN cd /software/ && \
-#     git clone https://github.com/rvhonorato/gdock.git && \
-#     cd gdock && \
-#     ## Hacky fix for numpy version
-#     python -m pip uninstall -y numpy && \
-#     python -m pip install numpy>=1.23 && \
-#     python setup.py develop && \
-#     bash install.sh /software/gdock
-# ENV GDOCK_PATH=/software/gdock
-
-## Install LightDock
-# RUN cd /software/ &&\
-#     git clone https://github.com/lightdock/lightdock.git && \
-#     cd lightdock && \
-#     python -m pip install .
 
 ## Set Working Directory back to haddock3
 WORKDIR /software/haddock3
