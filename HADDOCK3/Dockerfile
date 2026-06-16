@@ -27,7 +27,9 @@ RUN git clone --recursive https://github.com/haddocking/haddock3.git && \
     ## 2024.10.0b6
     # git checkout 8763134
     ## 2026.03.0
-    git checkout 4d6f6f1
+    # git checkout 4d6f6f1
+    ## 2026.5.0
+    git checkout 2457bc4
 
 RUN cd /software/haddock3 && \
     pip install .
