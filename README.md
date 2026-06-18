@@ -8,7 +8,7 @@ Docker images for the running the HADDOCK (**H**igh **A**mbiguity **D**riven pro
 |-------------	|-----------	|
 
 ## Licensing
-This container images in this repository includes software libraries that each require a license (and may limit use to non-profit/academic work). Please check the licenses and/or fill out the following license request forms before using this software:
+The container images in this repository includes software libraries that each require a license (and may limit use to non-profit/academic work). Please check the licenses and/or fill out the following license request forms before using this software:
 
 - HADDOCK:
   - v2.4: https://www.bonvinlab.org/software/haddock2.4/download
@@ -18,6 +18,7 @@ This container images in this repository includes software libraries that each r
 
 ## Citations
 
+- M. Giulini, V. Reys, J.M.C. Teixeira, B. Jiménez-García, R.V. Honorato, A. Kravchenko, X. Xu, R. Versini, A. Engel, S. Verhoeven, A.M.J.J. Bonvin, [*HADDOCK3: A modular and versatile platform for integrative modelling of biomolecular complexes*](https://pubs.acs.org/doi/10.1021/acs.jcim.5c00969) Journal of Chemical Information and Modeling (2025). doi: 10.1021/acs.jcim.5c00969 [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2025.04.30.651432v1)
 - R.V. Honorato, P.I. Koukos, B. Jimenez-Garcia, A. Tsaregorodtsev, M. Verlato, A. Giachetti, A. Rosato and A.M.J.J. Bonvin (2021). "[Structural biology in the clouds: The WeNMR-EOSC Ecosystem](https://doi.org/10.3389/fmolb.2021.729513)." *Frontiers Mol. Biosci.*, 8, fmolb.2021.729513.
 - G.C.P van Zundert, J.P.G.L.M. Rodrigues, M. Trellet, C. Schmitz, P.L. Kastritis, E. Karaca, A.S.J. Melquiond, M. van Dijk, S.J. de Vries and A.M.J.J. Bonvin (2016). "[The HADDOCK2.2 webserver: User-friendly integrative modeling of biomolecular complexes](http://dx.doi.org/doi:10.1016/j.jmb.2015.09.014)." *J. Mol. Biol.*, 428, 720-725 (2015).
 - Dominguez, C., Boelens, R. & Bonvin, A. M. J. J. HADDOCK: a protein-protein docking approach based on biochemical or biophysical information. *J Am Chem Soc*, 125, 1731–1737 (2003).
